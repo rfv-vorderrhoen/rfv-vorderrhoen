@@ -1,7 +1,7 @@
 ---
 title: "Hessentag in Fulda"
 description: Hessentag in der Johannisaue
-date: 2026-05-30
+date: 2026-06-20
 isEvent: true
 seoTitle: Voltigierturnier Grünberg | RFV Vorderrhön
 seoDescription: Voltigierturnier Grünberg | RFV Vorderrhön
