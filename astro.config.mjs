@@ -8,7 +8,7 @@ import remarkObsidianImageEmbeds from "./src/markdown/remark-obsidian-image-embe
 const site = process.env.PUBLIC_SITE_URL ?? "https://example.github.io";
 const base =
   process.env.PUBLIC_BASE_PATH ??
-  (process.env.NODE_ENV === "development" ? "/" : "/rfv-vorderrhoen");
+  (process.env.NODE_ENV === "development" ? "/" : "/");
 
 export default defineConfig({
   site,
