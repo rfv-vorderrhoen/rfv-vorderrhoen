@@ -1,10 +1,10 @@
 ---
-title: "Turnier in Edertal"
-description: Im Mai findet in Grünberg ein WBO-Turnier statt.
-date: 2026-05-03
+title: "Turnier in Idstein"
+description: Im Mai findet in Idstein ein Turnier statt.
+date: 2026-29-08
 isEvent: true
-seoTitle: Voltigierturnier Grünberg | RFV Vorderrhön
-seoDescription: Voltigierturnier Grünberg | RFV Vorderrhön
+seoTitle: Voltigierturnier Idstein | RFV Vorderrhön
+seoDescription: Voltigierturnier Idstein | RFV Vorderrhön
 ---
 
-Die Voltigiererinnen von Vorderrhön 1-5 treten im Mai auf dem Grünberger Turnier an.
+Die Voltigiererinnen von Vorderrhön 1-4 treten im August auf dem Turnier in Idstein an.
