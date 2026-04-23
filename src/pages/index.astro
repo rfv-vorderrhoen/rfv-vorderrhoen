@@ -8,6 +8,7 @@ import SectionReveal from "@/components/home/SectionReveal";
 import NewsCard from "@/components/news/NewsCard.astro";
 import HorseRail from "@/components/horses/HorseRail.astro";
 import LocationMap from "@/components/ui/LocationMap.astro";
+import { getHomepageNewsEntries } from "@/lib/news";
 import {
     benefits,
     siteConfig,
@@ -16,9 +17,7 @@ import {
 } from "@/lib/site";
 
 const allNews = await getCollection("news", ({ data }) => !data.draft);
-const featuredNews = allNews
-    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-    .slice(0, 3);
+const featuredNews = getHomepageNewsEntries(allNews, 3);
 const allHorses = (await getCollection("horses")).sort(
     (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99),
 );
