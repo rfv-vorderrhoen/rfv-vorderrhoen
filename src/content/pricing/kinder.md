@@ -1,15 +1,14 @@
 ---
 name: Kinder bis 18 Jahren
-groupLabel: Jahresbeitrag
-priceLabel: 50 EUR / Jahr
-description: Jährlicher Vereinsbeitrag für Kinder und Jugendliche bis 18 Jahre.
+groupLabel: Vereinsmitgliedschaft
+description: Vereinsmitgliedschaft für Kinder und Jugendliche, die im Verein aktiv teilnehmen möchten.
 features:
-  - Mitgliedschaft für Kinder und Jugendliche
-  - Gültig bis zum 18. Lebensjahr
+  - Für Kinder und Jugendliche bis zum 18. Lebensjahr
   - Grundlage für die aktive Teilnahme im Verein
+  - Passend für Einsteigerinnen, Einsteiger und bestehende Gruppen
 order: 2
 ctaLabel: Mitgliedschaft anfragen
 ctaUrl: /probetraining-anfragen
 ---
 
-Der Beitrag gilt für Mitglieder bis einschließlich 18 Jahre.
+Diese Mitgliedschaft bildet die Basis für Kinder und Jugendliche im Trainingsbetrieb.

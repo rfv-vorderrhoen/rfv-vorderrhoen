@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { compareEventEntriesByDateAsc } from "@/lib/news";
 import { withBase } from "@/lib/paths";
 
 interface Props {
@@ -22,9 +23,7 @@ const fullDateFormatter = new Intl.DateTimeFormat("de-DE", {
 });
 
 const calendarEntries = entries.filter((entry) => entry.data.isEvent);
-const sortedEntries = [...calendarEntries].sort(
-    (a, b) => a.data.date.getTime() - b.data.date.getTime(),
-);
+const sortedEntries = [...calendarEntries].sort(compareEventEntriesByDateAsc);
 const yearBuckets = sortedEntries.reduce((groups, entry) => {
     const year = entry.data.date.getUTCFullYear();
     const existing = groups.get(year) ?? [];

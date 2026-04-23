@@ -1,15 +1,14 @@
 ---
 name: Einmal pro Woche
-groupLabel: Voltigierbeitrag
-priceLabel: 39 EUR / Monat
-description: Monatlicher Voltigierbeitrag für ein Training pro Woche.
+groupLabel: Aktive Trainingsmitgliedschaft
+description: Aktive Teilnahme für Gruppen mit einem festen Trainingstermin pro Woche.
 features:
   - Eine feste Trainingseinheit pro Woche
-  - Zusätzlich zum Jahresbeitrag
-  - Für regelmäßige aktive Teilnahme
+  - Ergänzt die Vereinsmitgliedschaft
+  - Für regelmäßige aktive Teilnahme im Gruppenrhythmus
 order: 5
 ctaLabel: Platz anfragen
 ctaUrl: /probetraining-anfragen
 ---
 
-Der Beitrag richtet sich nach der Trainingshäufigkeit.
+Diese Form passt zu Gruppen mit einem klaren wöchentlichen Trainingsrhythmus.

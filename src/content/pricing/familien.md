@@ -1,15 +1,14 @@
 ---
 name: Familien
-groupLabel: Jahresbeitrag
-priceLabel: 100 EUR / Jahr
-description: Jährlicher Vereinsbeitrag für Familienmitgliedschaften.
+groupLabel: Vereinsmitgliedschaft
+description: Mitgliedschaftsform für Familien, wenn mehrere Angehörige Teil des Vereins sind.
 features:
-  - Gemeinsame Mitgliedschaft für Familien
-  - Ein Jahresbeitrag für mehrere Familienmitglieder
-  - Geeignet, wenn mehrere Personen im Verein angemeldet sind
+  - Für mehrere Familienmitglieder im Verein
+  - Sinnvoll bei gemeinsamer Vereinszugehörigkeit
+  - Geeignet, wenn mehrere Personen aktiv oder begleitend dabei sind
 order: 3
 ctaLabel: Mitgliedschaft anfragen
 ctaUrl: /probetraining-anfragen
 ---
 
-Sinnvoll, wenn mehrere Familienmitglieder Teil des Vereins sind.
+Sinnvoll, wenn eure Mitgliedschaft als Familie gemeinsam organisiert werden soll.

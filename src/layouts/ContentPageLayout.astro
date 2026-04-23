@@ -4,7 +4,7 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import PageIntro from "@/components/ui/PageIntro.astro";
 import Section from "@/components/ui/Section.astro";
 import Button from "@/components/ui/Button.astro";
-import PricingCards from "@/components/ui/PricingCards";
+import MembershipCards from "@/components/ui/MembershipCards";
 import FaqAccordion from "@/components/ui/FaqAccordion";
 import GoogleFormEmbed from "@/components/forms/GoogleFormEmbed.astro";
 import LocationMap from "@/components/ui/LocationMap.astro";
@@ -15,11 +15,16 @@ interface Props {
 }
 
 type PricingEntry = CollectionEntry<"pricing">;
-type PricingGroup = {
-    label: string;
+type MembershipSection = {
+    key: string;
+    eyebrow: string;
+    title: string;
+    description: string;
     items: PricingEntry[];
 };
-const fallbackPricingGroupLabel = "Weitere Preise";
+
+const membershipGroupLabel = "Vereinsmitgliedschaft";
+const trainingGroupLabel = "Aktive Trainingsmitgliedschaft";
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
@@ -29,37 +34,51 @@ const pricingEntries =
               (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99),
           )
         : [];
-const pricingGroups: PricingGroup[] = [];
+const membershipSections: MembershipSection[] = [];
 
 if (entry.slug === "pricing") {
-    const groups = new Map<string, PricingEntry[]>();
+    const clubMemberships = pricingEntries.filter(
+        (item) => item.data.groupLabel === membershipGroupLabel,
+    );
+    const trainingMemberships = pricingEntries.filter(
+        (item) => item.data.groupLabel === trainingGroupLabel,
+    );
+    const additionalMemberships = pricingEntries.filter(
+        (item) =>
+            item.data.groupLabel !== membershipGroupLabel &&
+            item.data.groupLabel !== trainingGroupLabel,
+    );
 
-    for (const item of pricingEntries) {
-        const label = item.data.groupLabel ?? fallbackPricingGroupLabel;
-        const items = groups.get(label);
-
-        if (items) {
-            items.push(item);
-        } else {
-            groups.set(label, [item]);
-        }
+    if (clubMemberships.length > 0) {
+        membershipSections.push({
+            key: "club-memberships",
+            eyebrow: "Verein",
+            title: "Vereinsmitgliedschaft",
+            description: "Die passende Mitgliedschaft im Verein.",
+            items: clubMemberships,
+        });
     }
 
-    pricingGroups.push(
-        ...Array.from(groups, ([label, items]) => ({ label, items })).sort(
-            (a, b) => {
-                if (a.label === fallbackPricingGroupLabel) {
-                    return 1;
-                }
+    if (trainingMemberships.length > 0) {
+        membershipSections.push({
+            key: "active-training",
+            eyebrow: "Training",
+            title: "Aktive Teilnahme",
+            description:
+                "Zusätzlich zur Vereinsmitgliedschaft für aktive Voltigiererinnen und Voltigierer.",
+            items: trainingMemberships,
+        });
+    }
 
-                if (b.label === fallbackPricingGroupLabel) {
-                    return -1;
-                }
-
-                return 0;
-            },
-        ),
-    );
+    if (additionalMemberships.length > 0) {
+        membershipSections.push({
+            key: "additional-options",
+            eyebrow: "Zusätzlich",
+            title: "Weitere Optionen",
+            description: "Individuell nach Absprache.",
+            items: additionalMemberships,
+        });
+    }
 }
 ---
 
@@ -75,8 +94,8 @@ if (entry.slug === "pricing") {
     </Section>
     {
         entry.body && (
-            <Section spaced={false} className="pb-12 pt-8 md:pb-16">
-                <article class="panel rich-text px-6 pb-8 pt-4 md:px-10 md:pb-12 md:pt-8">
+            <Section spaced={false} className="pb-8 pt-8 md:pb-10">
+                <article class="panel rich-text px-6 pb-8 pt-4 md:px-10 md:pb-10 md:pt-6">
                     <Content />
                 </article>
             </Section>
@@ -86,82 +105,77 @@ if (entry.slug === "pricing") {
     {
         entry.slug === "pricing" && (
             <>
-                {pricingGroups.map((group) => (
-                    <Section spaced={false} className="pb-8 pt-0 md:pb-10">
-                        <div class="mb-6 md:mb-8">
-                            <span class="eyebrow">{group.label}</span>
-                        </div>
-                        <PricingCards
-                            client:visible
-                            items={group.items.map((item) => ({
-                                id: item.id,
-                                data: {
-                                    name: item.data.name,
-                                    priceLabel: item.data.priceLabel,
-                                    description: item.data.description,
-                                    features: item.data.features,
-                                    highlighted: item.data.highlighted,
-                                    ctaLabel: item.data.ctaLabel,
-                                    ctaUrl: item.data.ctaUrl,
-                                },
-                            }))}
-                        />
-                    </Section>
-                ))}
-                <Section spaced={false} className="pb-8 pt-0 md:pb-10">
-                    <div class="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-                        <div class="panel p-8 md:p-10">
-                            <span class="eyebrow">
-                                Hinweise zu den Beiträgen
-                            </span>
-                            <h2 class="mt-4 text-3xl md:text-4xl">
-                                Jahresbeitrag und Voltigierbeitrag werden
-                                getrennt berechnet.
+                {membershipSections.map((section) => (
+                    <Section
+                        spaced={false}
+                        className="pb-8 pt-0 md:pb-10"
+                        id={section.key}
+                    >
+                        <div class="max-w-3xl">
+                            <span class="eyebrow">{section.eyebrow}</span>
+                            <h2 class="mt-3 text-3xl md:text-4xl">
+                                {section.title}
                             </h2>
                             <p class="mt-4 text-[var(--color-soft-ink)]">
-                                Die Mitgliedschaft im Verein wird jährlich
-                                berechnet. Für aktive Voltigiergruppen kommt
-                                zusätzlich ein monatlicher Trainingsbeitrag
-                                hinzu, der sich nach der Anzahl der
-                                wöchentlichen Einheiten richtet.
+                                {section.description}
                             </p>
-                            <ul class="mt-6 space-y-3 text-sm text-[var(--color-soft-ink)]">
-                                <li class="flex gap-3">
-                                    <span class="mt-1.5 h-2 w-2 rounded-full bg-[var(--color-moss)]" />
-                                    <span>
-                                        Geschwisterkinder erhalten 5 EUR
-                                        Ermäßigung auf den monatlichen
-                                        Voltigierbeitrag.
-                                    </span>
-                                </li>
-                                <li class="flex gap-3">
-                                    <span class="mt-1.5 h-2 w-2 rounded-full bg-[var(--color-moss)]" />
-                                    <span>
-                                        Die Fördermitgliedschaft gilt für
-                                        erwachsene Personen mit Stimmrecht, die
-                                        nicht regelmäßig an Sportangeboten des
-                                        RFV Vorderrhön teilnehmen.
-                                    </span>
-                                </li>
-                            </ul>
                         </div>
-                        <FaqAccordion
-                            client:visible
-                            items={faqItems.slice(0, 3)}
-                        />
+                        <div class="mt-6">
+                            <MembershipCards
+                                client:visible
+                                items={section.items.map((item) => ({
+                                    id: item.id,
+                                    data: {
+                                        name: item.data.name,
+                                        description: item.data.description,
+                                        features: item.data.features,
+                                        highlighted: item.data.highlighted,
+                                    },
+                                }))}
+                            />
+                        </div>
+                    </Section>
+                ))}
+
+                <Section spaced={false} className="pb-8 pt-0 md:pb-10">
+                    <div class="panel p-8 md:p-10">
+                        <span class="eyebrow">Wichtig</span>
+                        <ul class="mt-6 space-y-3 text-sm text-[var(--color-soft-ink)]">
+                            <li class="flex gap-3">
+                                <span class="mt-1.5 h-2 w-2 rounded-full bg-[var(--color-moss)]" />
+                                <span>
+                                    Vereinsmitgliedschaft und aktive Teilnahme
+                                    werden getrennt betrachtet.
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="mt-1.5 h-2 w-2 rounded-full bg-[var(--color-moss)]" />
+                                <span>
+                                    Fördermitgliedschaft ist ohne regelmäßige
+                                    aktive Teilnahme gedacht.
+                                </span>
+                            </li>
+                            <li class="flex gap-3">
+                                <span class="mt-1.5 h-2 w-2 rounded-full bg-[var(--color-moss)]" />
+                                <span>
+                                    Reitbeteiligungen und Details klären wir
+                                    individuell.
+                                </span>
+                            </li>
+                        </ul>
                     </div>
                 </Section>
+
                 <Section spaced={false} className="pb-8 pt-0 md:pb-10">
                     <div class="panel flex flex-col gap-6 p-8 md:flex-row md:items-center md:justify-between md:p-10">
                         <div>
-                            <span class="eyebrow">Nächster Schritt</span>
+                            <span class="eyebrow">Anfrage</span>
                             <h2 class="mt-4 text-3xl md:text-4xl">
-                                Probetraining buchen oder Gruppeneinteilung
-                                anfragen.
+                                Mitgliedschaft oder Probetraining anfragen.
                             </h2>
                         </div>
                         <Button href={siteConfig.signupUrl}>
-                            Google-Formular öffnen
+                            Anfrage starten
                         </Button>
                     </div>
                 </Section>
@@ -182,96 +196,100 @@ if (entry.slug === "pricing") {
             <Section className="pt-0">
                 <div class="grid gap-5">
                     <div class="grid gap-5 xl:grid-cols-[1.05fr_0.95fr] xl:items-start">
-                    <div class="grid gap-5">
-                        <div class="panel p-6">
-                            <p class="text-sm uppercase tracking-[0.16em] text-[var(--color-moss)]">
-                                E-Mail
-                            </p>
-                            <a
-                                class="mt-3 block text-xl font-semibold"
-                                href={`mailto:${siteConfig.email}`}
-                            >
-                                {siteConfig.email}
-                            </a>
-                        </div>
-                        <div class="panel p-6">
-                            <p class="text-sm uppercase tracking-[0.16em] text-[var(--color-moss)]">
-                                Telefon
-                            </p>
-                            <a
-                                class="mt-3 block text-xl font-semibold"
-                                href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
-                            >
-                                {siteConfig.phone}
-                            </a>
-                        </div>
-                        <div class="panel p-6">
-                            <p class="text-sm uppercase tracking-[0.16em] text-[var(--color-moss)]">
-                                Probetraining
-                            </p>
-                            <Button
-                                href={siteConfig.signupUrl}
-                                className="mt-3"
-                            >
-                                Probetraining anfragen
-                            </Button>
-                        </div>
-                    </div>
-
-                    <div class="panel p-6 md:p-8">
-                        <span class="eyebrow">Socials</span>
-                        <h2 class="mt-4 text-3xl md:text-4xl">
-                            Instagram-Accounts für Verein und Teams
-                        </h2>
-                        <div class="mt-6 grid gap-4">
-                            {socialLinks.map((item) => (
+                        <div class="grid gap-5">
+                            <div class="panel p-6">
+                                <p class="text-sm uppercase tracking-[0.16em] text-[var(--color-moss)]">
+                                    E-Mail
+                                </p>
                                 <a
-                                    class="relative overflow-hidden rounded-[1.3rem] border border-[var(--color-line)] bg-white/55 px-5 py-4 pr-18 transition hover:-translate-y-0.5 hover:border-[var(--color-moss)]"
-                                    href={item.href}
-                                    target="_blank"
-                                    rel="noreferrer"
+                                    class="mt-3 block text-xl font-semibold"
+                                    href={`mailto:${siteConfig.email}`}
                                 >
-                                    <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[var(--color-moss)] opacity-18">
-                                        <svg
-                                            aria-hidden="true"
-                                            viewBox="0 0 24 24"
-                                            class="h-12 w-12"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            stroke-width="1.5"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                        >
-                                            <rect
-                                                x="3.5"
-                                                y="3.5"
-                                                width="17"
-                                                height="17"
-                                                rx="5"
-                                            />
-                                            <circle cx="12" cy="12" r="4" />
-                                            <circle
-                                                cx="17.35"
-                                                cy="6.65"
-                                                r="0.8"
-                                                fill="currentColor"
-                                                stroke="none"
-                                            />
-                                        </svg>
-                                    </span>
-                                    <span class="block text-xs uppercase tracking-[0.14em] text-[var(--color-moss)]">
-                                        {item.platform}
-                                    </span>
-                                    <span class="mt-2 block text-xl font-semibold">
-                                        {item.label}
-                                    </span>
-                                    <span class="mt-1 block text-[var(--color-soft-ink)]">
-                                        {item.handle}
-                                    </span>
+                                    {siteConfig.email}
                                 </a>
-                            ))}
+                            </div>
+                            <div class="panel p-6">
+                                <p class="text-sm uppercase tracking-[0.16em] text-[var(--color-moss)]">
+                                    Telefon
+                                </p>
+                                <a
+                                    class="mt-3 block text-xl font-semibold"
+                                    href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+                                >
+                                    {siteConfig.phone}
+                                </a>
+                            </div>
+                            <div class="panel p-6">
+                                <p class="text-sm uppercase tracking-[0.16em] text-[var(--color-moss)]">
+                                    Probetraining
+                                </p>
+                                <Button
+                                    href={siteConfig.signupUrl}
+                                    className="mt-3"
+                                >
+                                    Probetraining anfragen
+                                </Button>
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="panel p-6 md:p-8">
+                            <span class="eyebrow">Socials</span>
+                            <h2 class="mt-4 text-3xl md:text-4xl">
+                                Instagram-Accounts für Verein und Teams
+                            </h2>
+                            <div class="mt-6 grid gap-4">
+                                {socialLinks.map((item) => (
+                                    <a
+                                        class="relative overflow-hidden rounded-[1.3rem] border border-[var(--color-line)] bg-white/55 px-5 py-4 pr-18 transition hover:-translate-y-0.5 hover:border-[var(--color-moss)]"
+                                        href={item.href}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <span class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[var(--color-moss)] opacity-18">
+                                            <svg
+                                                aria-hidden="true"
+                                                viewBox="0 0 24 24"
+                                                class="h-12 w-12"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                stroke-width="1.5"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                            >
+                                                <rect
+                                                    x="3.5"
+                                                    y="3.5"
+                                                    width="17"
+                                                    height="17"
+                                                    rx="5"
+                                                />
+                                                <circle
+                                                    cx="12"
+                                                    cy="12"
+                                                    r="4"
+                                                />
+                                                <circle
+                                                    cx="17.35"
+                                                    cy="6.65"
+                                                    r="0.8"
+                                                    fill="currentColor"
+                                                    stroke="none"
+                                                />
+                                            </svg>
+                                        </span>
+                                        <span class="block text-xs uppercase tracking-[0.14em] text-[var(--color-moss)]">
+                                            {item.platform}
+                                        </span>
+                                        <span class="mt-2 block text-xl font-semibold">
+                                            {item.label}
+                                        </span>
+                                        <span class="mt-1 block text-[var(--color-soft-ink)]">
+                                            {item.handle}
+                                        </span>
+                                    </a>
+                                ))}
+                            </div>
+                        </div>
                     </div>
 
                     <LocationMap

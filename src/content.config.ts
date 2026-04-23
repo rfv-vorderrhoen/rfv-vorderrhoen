@@ -60,7 +60,6 @@ const pricing = defineCollection({
   schema: z.object({
     name: z.string(),
     groupLabel: z.string().optional(),
-    priceLabel: z.string(),
     description: z.string(),
     features: z.array(z.string()),
     highlighted: z.boolean().optional(),

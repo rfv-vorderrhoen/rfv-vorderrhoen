@@ -1,15 +1,14 @@
 ---
 name: Fördermitglied
-groupLabel: Jahresbeitrag
-priceLabel: 20 EUR / Jahr
-description: Jährlicher Beitrag für erwachsene Fördermitglieder mit Stimmrecht.
+groupLabel: Vereinsmitgliedschaft
+description: Mitgliedschaft für Erwachsene, die den Verein unterstützen möchten, ohne regelmäßig aktiv zu trainieren.
 features:
-  - Für erwachsene Personen mit Stimmrecht
-  - Ohne aktive regelmäßige Teilnahme am Sportangebot
-  - Unterstützt den Verein als Mitglied
+  - Für erwachsene unterstützende Mitglieder
+  - Ohne regelmäßige aktive Teilnahme am Sportangebot
+  - Mit Stimmrecht in der Mitgliederversammlung
 order: 4
 ctaLabel: Mitgliedschaft anfragen
 ctaUrl: /probetraining-anfragen
 ---
 
-Gedacht für erwachsene Personen, die den Verein fördern möchten.
+Gedacht für erwachsene Personen, die den Verein ideell und organisatorisch mittragen möchten.

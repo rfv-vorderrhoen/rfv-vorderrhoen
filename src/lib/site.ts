@@ -40,7 +40,7 @@ export const mainNav = [
   { href: withBase("/news"), label: "Aktuelles" },
   { href: withBase("/pferde"), label: "Pferde" },
   { href: withBase("/training"), label: "Training" },
-  { href: withBase("/pricing"), label: "Preise" },
+  { href: withBase("/pricing"), label: "Mitgliedschaften" },
   { href: withBase("/about-club"), label: "Über Uns" },
   { href: withBase("/faq"), label: "FAQ" },
 ];
@@ -101,6 +101,6 @@ export const faqItems = [
   {
     question: "Wie funktioniert die Bezahlung?",
     answer:
-      "Die Preise findest du klar auf der Preisseite. Anfragen laufen über die Seite für Probetraining und das Google-Formular, danach bestätigen wir Gruppe und Startdetails.",
+      "Auf der Seite zu den Mitgliedschaften erklären wir, wie Vereinsmitgliedschaft und aktive Teilnahme zusammenhängen. Die aktuelle Beitragsordnung und die passende Einordnung besprechen wir anschließend persönlich mit dir.",
   },
 ];

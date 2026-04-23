@@ -1,15 +1,14 @@
 ---
 name: Erwachsene
-groupLabel: Jahresbeitrag
-priceLabel: 70 EUR / Jahr
-description: Jährlicher Vereinsbeitrag für erwachsene Mitglieder.
+groupLabel: Vereinsmitgliedschaft
+description: Vereinsmitgliedschaft für volljährige Personen, die selbst aktiv Teil des Vereinslebens sind.
 features:
-  - Reguläre Mitgliedschaft im Verein
-  - Für erwachsene aktive Mitglieder
+  - Erwachsene aktive Mitglieder im Verein
+  - Reguläre Mitgliedschaft mit Vereinszugehörigkeit
   - Mit Stimmrecht in der Mitgliederversammlung
 order: 1
 ctaLabel: Mitgliedschaft anfragen
 ctaUrl: /probetraining-anfragen
 ---
 
-Der Jahresbeitrag gilt pro erwachsene Person.
+Die passende Form für Erwachsene, die selbst am Vereinsleben teilnehmen.

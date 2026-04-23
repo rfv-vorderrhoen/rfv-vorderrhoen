@@ -5,21 +5,20 @@ import PageIntro from "@/components/ui/PageIntro.astro";
 import Section from "@/components/ui/Section.astro";
 import NewsPlanner from "@/components/news/NewsPlanner.astro";
 import NewsCard from "@/components/news/NewsCard.astro";
-
-const toUtcDayTimestamp = (date: Date) =>
-    Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate());
+import {
+    compareEventEntriesByDateAsc,
+    compareNewsEntriesByDateDesc,
+    getEventVisibilityDate,
+    getUpcomingEventEntries,
+} from "@/lib/news";
 
 const entries = (await getCollection("news", ({ data }) => !data.draft)).sort(
-    (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+    compareNewsEntriesByDateDesc,
 );
 const eventEntries = entries
     .filter((entry) => entry.data.isEvent)
-    .sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
-const todayUtcDay = toUtcDayTimestamp(new Date());
-const upcomingEventEntries = eventEntries.filter((entry) => {
-    const visibilityDate = entry.data.eventEnd ?? entry.data.date;
-    return toUtcDayTimestamp(visibilityDate) >= todayUtcDay;
-});
+    .sort(compareEventEntriesByDateAsc);
+const upcomingEventEntries = getUpcomingEventEntries(eventEntries);
 const upcomingEventsAreScrollable = upcomingEventEntries.length > 4;
 const articleEntries = entries.filter((entry) => !entry.data.isEvent);
 ---
@@ -61,8 +60,8 @@ const articleEntries = entries.filter((entry) => !entry.data.isEvent);
                             id={`news-${entry.slug}`}
                             class="scroll-mt-28"
                             data-upcoming-event
-                            data-event-until={(
-                                entry.data.eventEnd ?? entry.data.date
+                            data-event-until={getEventVisibilityDate(
+                                entry,
                             ).toISOString()}
                         >
                             <NewsCard
