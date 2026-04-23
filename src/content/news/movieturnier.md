@@ -21,3 +21,7 @@ Weitere Informationen:
 - Unsere Ausschreibung findet ihr [hier](http://www.volti-hessen.de/images/Termine/Turniertermine/Ausschreibung%202026/Ausschreibung%20RFV%20Vorderrhoehn%202026%20Cup.pdf).
 - Unser Nennungsformular findet ihr [hier](http://www.volti-hessen.de/images/Termine/Turniertermine/Ausschreibung%202026/Nennungsformular%20Vorderrhoen%202026.xlsx).
 - Genauere Informationen zum Volti-Cup findet ihr auf der [Seite des Kreisreiterbundes](https://www.krb-rhoen-vb.de/unsere-aktivit%C3%A4ten-cups/voltigier-cup-2025/).
+
+### Die aktuelle Zeiteinteilung
+
+![[../../../assets/zeiteinteilung.pdf|Zeiteinteilung]]
