@@ -24,4 +24,4 @@ Weitere Informationen:
 
 ### Die aktuelle Zeiteinteilung
 
-![[../../../assets/zeiteinteilung.pdf|Zeiteinteilung]]
+![[../../../assets/zeiteinteilung.pdf|Zeiteinteilung|720]]
