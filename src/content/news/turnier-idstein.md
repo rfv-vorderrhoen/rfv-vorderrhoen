@@ -1,6 +1,6 @@
 ---
 title: "Turnier in Idstein"
-description: Im Mai findet in Idstein ein Turnier statt.
+description: Im August findet in Idstein ein Turnier statt.
 date: 2026-29-08
 isEvent: true
 seoTitle: Voltigierturnier Idstein | RFV Vorderrhön
