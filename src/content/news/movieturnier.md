@@ -3,8 +3,8 @@ title: "Turnpferd- und Movieturnier"
 description: Im April findet bei uns am Hof ein Turnpferd- und Movieturnier statt.
 date: 2026-04-25
 isEvent: true
-seoTitle: Neuer Holzpferd-Bereich eingerichtet | RFV Vorderrhön
-seoDescription: Im April findet bei uns am Hof ein Turnpferd- und Movieturnier statt.
+seoTitle: Turnpferd- und Movieturnier in Künzell | RFV Vorderrhön
+seoDescription: Turnpferd- und Movieturnier in Künzell
 ---
 
 Nachdem das Turnier im letzten Jahr ein voller Erfolg war, haben wir uns dazu entschieden, auch dieses Jahr ein Turnpferd- und Movieturnier auszurichten. Dieses findet am Samstag, den 25. April 2026, in unserer Reithalle am Bauernhof Hahner statt. 
