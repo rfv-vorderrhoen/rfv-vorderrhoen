@@ -56,7 +56,8 @@ export default function MobileNav({ currentPath }: Props) {
             ))}
             <a
               href={siteConfig.signupUrl}
-              className="mt-2 block rounded-2xl bg-[var(--color-sand)] px-4 py-3 text-sm font-semibold text-[var(--color-ink)]"
+              className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-[var(--color-forest)] px-5 py-3 text-sm font-semibold tracking-[0.01em] text-[var(--color-cream-strong)] shadow-[var(--shadow-soft)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#243827]"
+              style={{ color: "var(--color-cream-strong)" }}
               onClick={() => setOpen(false)}
             >
               Probetraining anfragen
