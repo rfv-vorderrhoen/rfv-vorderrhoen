@@ -3,8 +3,8 @@ title: "Aktionstag Voltigieren des Kreisreiterbundes"
 description: Der Kreisreiterbund richtet bei uns einen Aktionstag aus.
 date: 2026-04-26
 isEvent: true
-seoTitle: Neuer Holzpferd-Bereich eingerichtet | RFV Vorderrhön
-seoDescription: Ein neuer Holzpferd-Bereich verbessert Struktur und Ablauf im Training von RFV Vorderrhön.
+seoTitle: Aktionstag Voltigieren des KRB Rhön-Vogelsberg | RFV Vorderrhön
+seoDescription: Aktionstag Voltigieren des KRB Rhön-Vogelsberg
 # image: "../../../assets/rocky.png"
 imageAlt: test
 ---
