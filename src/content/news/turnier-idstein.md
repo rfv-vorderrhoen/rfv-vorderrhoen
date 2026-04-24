@@ -7,4 +7,4 @@ seoTitle: Voltigierturnier Idstein | RFV Vorderrhön
 seoDescription: Voltigierturnier Idstein | RFV Vorderrhön
 ---
 
-Die Voltigiererinnen von Vorderrhön 1-4 treten im August auf dem Turnier in Idstein an.
+Die Voltigiererinnen von Vorderrhön 1 treten im August auf dem Turnier in Idstein an.
