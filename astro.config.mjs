@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 import remarkObsidianImageEmbeds from "./src/markdown/remark-obsidian-image-embeds.mjs";
 
 export default defineConfig({
-  site: "https://rfv-vorderrhoen.de",
+  site: "https://www.rfv-vorderrhoen.de",
   base: "/",
   image: {
     service: {
