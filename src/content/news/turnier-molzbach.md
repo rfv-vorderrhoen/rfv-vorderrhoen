@@ -1,10 +1,11 @@
 ---
-title: "Turnier in Edertal"
-description: Im Mai findet in Grünberg ein WBO-Turnier statt.
-date: 2026-05-31
+title: "Turnier in Molzbach"
+description: Im Oktober findet in Molzbach ein Turnier statt.
+date: 2026-10-03
 isEvent: true
-seoTitle: Voltigierturnier Grünberg | RFV Vorderrhön
-seoDescription: Voltigierturnier Grünberg | RFV Vorderrhön
+seoTitle: Voltigierturnier Molzbach | RFV Vorderrhön
+seoDescription: Voltigierturnier Molzbach | RFV Vorderrhön
 ---
 
-Die Voltigiererinnen von Vorderrhön 1-5 treten im Mai auf dem Grünberger Turnier an.
+Die Voltigiererinnen von Vorderrhön 2-4 treten im Oktober auf dem Turnier der Molzbacher Voltis an.
+Dort findet außerdem die letzte Cup-Wertung des Volti-Cups des KRB Rhön-Vogelsbergs statt. 
