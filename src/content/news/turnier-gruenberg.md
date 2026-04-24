@@ -7,4 +7,4 @@ seoTitle: Voltigierturnier Grünberg | RFV Vorderrhön
 seoDescription: Voltigierturnier Grünberg | RFV Vorderrhön
 ---
 
-Die Voltigiererinnen von Vorderrhön 3,4 und 5 fahren im Mai nach Grünberg und rasieren.
+Die Voltigiererinnen von Vorderrhön 3 und 4 fahren im Mai nach Grünberg auf das Turnier.
