@@ -14,6 +14,10 @@ function formatCalendarTimestamp(date: Date) {
   return `${date.getUTCFullYear()}${padCalendarUnit(date.getUTCMonth() + 1)}${padCalendarUnit(date.getUTCDate())}T${padCalendarUnit(date.getUTCHours())}${padCalendarUnit(date.getUTCMinutes())}${padCalendarUnit(date.getUTCSeconds())}Z`;
 }
 
+function formatCalendarIsoDate(date: Date) {
+  return `${date.getUTCFullYear()}-${padCalendarUnit(date.getUTCMonth() + 1)}-${padCalendarUnit(date.getUTCDate())}`;
+}
+
 function getNextDay(date: Date) {
   return new Date(
     Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate() + 1),
@@ -90,9 +94,25 @@ export function getCalendarLinks(
         : `${formatCalendarDate(range.start)}/${formatCalendarDate(range.end)}`,
     details,
   });
+  const outlookParams = new URLSearchParams({
+    path: "/calendar/action/compose",
+    rru: "addevent",
+    subject: entry.data.title,
+    body: details,
+    allday: range.type === "all-day" ? "true" : "false",
+    startdt:
+      range.type === "timed"
+        ? range.start.toISOString()
+        : formatCalendarIsoDate(range.start),
+    enddt:
+      range.type === "timed"
+        ? range.end.toISOString()
+        : formatCalendarIsoDate(range.end),
+  });
 
   return {
     google: `https://calendar.google.com/calendar/render?${params.toString()}`,
+    outlook: `https://outlook.live.com/calendar/0/deeplink/compose?${outlookParams.toString()}`,
     apple: withBase(`/news/${entry.slug}.ics`),
   };
 }
