@@ -7,4 +7,4 @@ seoTitle: Hessentag Fulda | RFV Vorderrhön
 seoDescription: Hessentag Fulda | RFV Vorderrhön
 ---
 
-Die Voltigiererinnen von Vorderrhön 1 und 2 treten im Mai auf dem Hessentag auf.
+Die Voltigiererinnen von Vorderrhön 1 und 2 treten im Mai auf dem Hessentag auf. Dabei sind sie beim RUF Haunetal zu Gast. 
