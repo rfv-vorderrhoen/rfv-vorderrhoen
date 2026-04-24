@@ -38,17 +38,17 @@ const shouldScroll = entries.length > 3;
             </div>
             <div class="relative">
                 <div
-                    class="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-[linear-gradient(270deg,rgba(250,246,239,0.95),rgba(250,246,239,0))]"
+                    class="pointer-events-none absolute inset-y-0 right-0 z-10 hidden w-10 bg-[linear-gradient(270deg,rgba(250,246,239,0.95),rgba(250,246,239,0))] md:block"
                 ></div>
                 <div
-                    class="w-full overflow-x-auto overscroll-x-contain snap-x snap-proximity pb-2 md:snap-mandatory"
+                    class="w-full overflow-x-auto overscroll-x-contain pb-2 md:snap-x md:snap-mandatory"
                     data-horse-rail
                 >
-                    <div class="flex min-w-full gap-5 pr-2">
+                    <div class="min-w-full gap-5" data-horse-rail-track>
                     {
                         entries.map((entry) => (
                             <div
-                                class="shrink-0 basis-[78%] snap-start sm:basis-[calc((100%-1.25rem)/2)] lg:basis-[calc((100%-2.5rem)/3)]"
+                                class="snap-start"
                                 data-horse-rail-item
                             >
                                 <HorseCard entry={entry} />
@@ -271,9 +271,47 @@ const shouldScroll = entries.length > 3;
     [data-horse-rail] {
         scroll-behavior: smooth;
         scrollbar-width: none;
+        scroll-padding-inline: 1rem;
+        --horse-rail-card-width: min(18rem, calc(100vw - 5rem));
+        padding-inline-end: max(1rem, calc(100% - var(--horse-rail-card-width)));
     }
 
     [data-horse-rail]::-webkit-scrollbar {
         display: none;
+    }
+
+    [data-horse-rail-track] {
+        display: inline-flex;
+        min-width: 100%;
+        gap: 1.25rem;
+    }
+
+    [data-horse-rail-item] {
+        width: var(--horse-rail-card-width);
+        flex: 0 0 auto;
+    }
+
+    @media (min-width: 40rem) {
+        [data-horse-rail] {
+            scroll-padding-inline: 0;
+            padding-inline-end: 0;
+        }
+
+        [data-horse-rail-track] {
+            display: flex;
+            width: 100%;
+            padding-inline-end: 0.5rem;
+        }
+
+        [data-horse-rail-item] {
+            width: auto;
+            flex: 0 0 calc((100% - 1.25rem) / 2);
+        }
+    }
+
+    @media (min-width: 64rem) {
+        [data-horse-rail-item] {
+            flex-basis: calc((100% - 2.5rem) / 3);
+        }
     }
 </style>
