@@ -14,7 +14,7 @@ export default function MobileNav({ currentPath }: Props) {
     <div className="relative">
       <button
         type="button"
-        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line)] bg-white/70"
+        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line)] bg-white shadow-[var(--shadow-soft)]"
         aria-expanded={open}
         aria-controls="mobile-nav-panel"
         onClick={() => setOpen((value: boolean) => !value)}
@@ -35,7 +35,12 @@ export default function MobileNav({ currentPath }: Props) {
             initial={reduceMotion ? false : { opacity: 0, y: -8 }}
             animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
             exit={reduceMotion ? {} : { opacity: 0, y: -8 }}
-            className="panel absolute right-0 top-14 w-[min(22rem,calc(100vw-2rem))] max-w-[calc(100vw-2rem)] overflow-hidden p-2"
+            className="panel absolute right-0 top-14 w-[min(22rem,calc(100vw-2rem))] max-w-[calc(100vw-2rem)] overflow-hidden bg-[rgb(255,252,247)] p-2"
+            style={{
+              backgroundColor: "rgb(255, 252, 247)",
+              backdropFilter: "none",
+              WebkitBackdropFilter: "none",
+            }}
           >
             {mainNav.map((item) => (
               <a
@@ -51,7 +56,8 @@ export default function MobileNav({ currentPath }: Props) {
             ))}
             <a
               href={siteConfig.signupUrl}
-              className="mt-2 block rounded-2xl bg-[var(--color-sand)] px-4 py-3 text-sm font-semibold text-[var(--color-ink)]"
+              className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-[var(--color-forest)] px-5 py-3 text-sm font-semibold tracking-[0.01em] text-[var(--color-cream-strong)] shadow-[var(--shadow-soft)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#243827]"
+              style={{ color: "var(--color-cream-strong)" }}
               onClick={() => setOpen(false)}
             >
               Probetraining anfragen

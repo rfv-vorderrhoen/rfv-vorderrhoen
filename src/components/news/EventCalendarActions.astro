@@ -1,6 +1,5 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Button from "@/components/ui/Button.astro";
 import { getCalendarLinks } from "@/lib/calendar";
 
 interface Props {
@@ -16,33 +15,55 @@ const links = getCalendarLinks(entry, Astro.site);
     entry.data.isEvent && (
         <div
             class:list={[
-                compact
-                    ? "flex flex-wrap gap-3"
-                    : "panel flex flex-wrap items-center gap-3 px-5 py-4 md:px-6",
+                "grid w-full max-w-[26rem] grid-cols-[auto_minmax(0,1fr)_minmax(0,1fr)] items-stretch overflow-hidden rounded-full border border-[var(--color-line)] bg-white/72 shadow-[var(--shadow-soft)]",
+                compact ? "text-xs" : "text-sm",
             ]}
         >
-            {
-                !compact && (
-                    <p class="mr-auto text-sm text-[var(--color-soft-ink)]">
-                        Termin direkt in den eigenen Kalender übernehmen.
-                    </p>
-                )
-            }
-            <Button
+            <span
+                class:list={[
+                    "inline-flex items-center justify-center border-r border-[var(--color-line)] bg-[rgba(255,252,247,0.88)] text-[var(--color-forest)]",
+                    compact ? "h-10 w-10" : "h-11 w-11",
+                ]}
+                aria-hidden="true"
+            >
+                <svg
+                    viewBox="0 0 24 24"
+                    class={compact ? "h-4 w-4" : "h-5 w-5"}
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <rect x="3.5" y="5" width="17" height="15.5" rx="3" />
+                    <path d="M7.5 3.5v3" />
+                    <path d="M16.5 3.5v3" />
+                    <path d="M3.5 9.5h17" />
+                    <path d="M8 13h3" />
+                    <path d="M13 13h3" />
+                    <path d="M8 17h3" />
+                </svg>
+            </span>
+            <a
                 href={links.google}
-                external
-                variant="secondary"
-                className={compact ? "px-4 py-2.5 text-xs" : ""}
+                target="_blank"
+                rel="noreferrer"
+                class:list={[
+                    "inline-flex min-w-0 items-center justify-center border-r border-[var(--color-line)] px-3 text-center font-semibold leading-tight tracking-[0.01em] text-[var(--color-ink)] transition duration-300 hover:bg-white/90 hover:text-[var(--color-forest)] sm:px-4 sm:whitespace-nowrap",
+                    compact ? "min-h-10" : "min-h-11",
+                ]}
             >
                 Google Kalender
-            </Button>
-            <Button
+            </a>
+            <a
                 href={links.apple}
-                variant="secondary"
-                className={compact ? "px-4 py-2.5 text-xs" : ""}
+                class:list={[
+                    "inline-flex min-w-0 items-center justify-center px-3 text-center font-semibold leading-tight tracking-[0.01em] text-[var(--color-ink)] transition duration-300 hover:bg-white/90 hover:text-[var(--color-forest)] sm:px-4 sm:whitespace-nowrap",
+                    compact ? "min-h-10" : "min-h-11",
+                ]}
             >
                 Apple Kalender
-            </Button>
+            </a>
         </div>
     )
 }
