@@ -112,11 +112,11 @@ const homepageHorses = featuredHorses.length ? featuredHorses : allHorses;
                     </figure>
                     <div class="p-8 md:p-10">
                         <span class="eyebrow">Was Voltigieren ist</span>
-                        <h2 class="mt-4 text-3xl md:text-5xl">
+                        <h2 class="mt-4 text-3xl md:text-4xl">
                             Ein Teamsport aus Bewegung, Mut und Partnerschaft
                         </h2>
                         <p
-                            class="mt-4 text-lg leading-8 text-[var(--color-soft-ink)]"
+                            class="mt-4 text-lg leading-7 text-[var(--color-soft-ink)]"
                         >
                             Voltigieren ist turnerisch-gymnastischer Sport auf
                             dem Pferd. Dabei turnen Kinder, Jugendliche und
@@ -132,23 +132,27 @@ const homepageHorses = featuredHorses.length ? featuredHorses : allHorses;
                         </p>
                     </div>
                 </div>
-                <div class="panel p-8 md:p-10">
+                <div class="panel flex h-full flex-col p-8 md:p-10">
                     <div>
                         <span class="eyebrow">Neuigkeiten</span>
                         <h2 class="mt-4 text-3xl md:text-4xl">
                             Aktuelles aus dem Verein
                         </h2>
                     </div>
-                    <div class="mt-6 grid gap-4">
+                    <div class="mt-6 grid gap-5">
                         {
                             featuredNews.map((entry) => (
                                 <NewsCard entry={entry} compact />
                             ))
                         }
                     </div>
-                    <div class="mt-8">
-                        <Button href="/news" variant="secondary">
-                            Aktuelles
+                    <div class="mt-auto pt-8">
+                        <Button
+                            href="/news"
+                            variant="secondary"
+                            className="w-full whitespace-normal px-6 py-4 text-center leading-6 shadow-[var(--shadow-soft)]"
+                        >
+                            Entdecke weitere Neuigkeiten aus unserem Verein
                         </Button>
                     </div>
                 </div>
