@@ -24,6 +24,7 @@ html {
     scrollbar-gutter: stable;
     max-width: 100%;
     overflow-x: clip;
+    background: #f7f1e7;
 }
 
 body {
@@ -374,7 +375,7 @@ img {
     will-change: opacity, transform, filter;
 }
 
-.section-reveal[data-reveal-state="pending"] {
+html[data-reveal-effects="enabled"] .section-reveal[data-reveal-state="pending"] {
     opacity: 0;
     transform: translateY(24px);
     filter: blur(4px);
@@ -384,6 +385,19 @@ img {
     opacity: 1;
     transform: translateY(0);
     filter: blur(0);
+}
+
+@supports (view-transition-name: root) {
+    ::view-transition-group(root) {
+        background: #f7f1e7;
+    }
+
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+        animation-duration: 160ms;
+        animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+        mix-blend-mode: normal;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -396,12 +410,17 @@ img {
         transition: none;
     }
 
-    .section-reveal[data-reveal-state="pending"] {
+    html[data-reveal-effects="enabled"] .section-reveal[data-reveal-state="pending"] {
         opacity: 1;
         transform: none;
         filter: none;
     }
 
+    ::view-transition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+        animation: none !important;
+    }
 }
 
 @media (max-width: 768px) {

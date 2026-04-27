@@ -8,99 +8,151 @@ import { siteConfig } from "@/lib/site";
 import logoPng from "../../assets/logo.png";
 
 interface Props {
-  title: string;
-  description: string;
-  image?: string;
+    title: string;
+    description: string;
+    image?: string;
 }
 
-const { title, description, image = withBase("/social-card.svg") } = Astro.props;
+const {
+    title,
+    description,
+    image = withBase("/social-card.svg"),
+} = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
 <html lang={Astro.currentLocale ?? "de"}>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <ClientRouter />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={siteConfig.name} />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical.toString()} />
-    <meta property="og:image" content={new URL(image, Astro.site).toString()} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <link rel="icon" type="image/png" href={logoPng.src} />
-    <link rel="apple-touch-icon" href={logoPng.src} />
-    <link rel="canonical" href={canonical.toString()} />
-  </head>
-  <body>
-    <Header />
-    <main>
-      <slot />
-    </main>
-    <Footer />
-    <script is:inline>
-      (() => {
-        const initSectionReveals = () => {
-          const elements = Array.from(
-            document.querySelectorAll("[data-reveal]")
-          );
-
-          if (!elements.length) {
-            return;
-          }
-
-          window.__sectionRevealObserver?.disconnect?.();
-
-          const observer = new IntersectionObserver(
-            (entries) => {
-              entries.forEach((entry) => {
-                if (!entry.isIntersecting) {
-                  return;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script is:inline>
+            document.documentElement.dataset.revealEffects = "enabled";
+        </script>
+        <ClientRouter fallback="swap" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={siteConfig.name} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonical.toString()} />
+        <meta
+            property="og:image"
+            content={new URL(image, Astro.site).toString()}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
+        <link rel="icon" type="image/png" href={logoPng.src} />
+        <link rel="apple-touch-icon" href={logoPng.src} />
+        <link rel="canonical" href={canonical.toString()} />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <slot />
+        </main>
+        <Footer />
+        <script is:inline>
+            (() => {
+                if (window.__sectionRevealRuntimeInstalled) {
+                    return;
                 }
 
-                entry.target.setAttribute("data-reveal-state", "visible");
-                observer.unobserve(entry.target);
-              });
-            },
-            {
-              threshold: 0.18,
-              rootMargin: "0px 0px -8% 0px",
-            }
-          );
+                window.__sectionRevealRuntimeInstalled = true;
 
-          window.__sectionRevealObserver = observer;
+                const revealSelector = "[data-reveal]";
 
-          elements.forEach((element) => {
-            const rect = element.getBoundingClientRect();
-            const isAlreadyVisible =
-              rect.top < window.innerHeight * 0.97 && rect.bottom > 0;
+                const initSectionReveals = () => {
+                    const elements = Array.from(
+                        document.querySelectorAll(revealSelector),
+                    );
 
-            if (isAlreadyVisible) {
-              element.setAttribute("data-reveal-state", "visible");
-              return;
-            }
+                    if (!elements.length) {
+                        return;
+                    }
 
-            element.setAttribute("data-reveal-state", "pending");
-            observer.observe(element);
-          });
-        };
+                    window.__sectionRevealObserver?.disconnect?.();
 
-        if (document.readyState === "loading") {
-          document.addEventListener("DOMContentLoaded", initSectionReveals, {
-            once: true,
-          });
-        } else {
-          initSectionReveals();
-        }
+                    const observer = new IntersectionObserver(
+                        (entries) => {
+                            entries.forEach((entry) => {
+                                if (!entry.isIntersecting) {
+                                    return;
+                                }
 
-        document.addEventListener("astro:page-load", initSectionReveals);
-      })();
-    </script>
-  </body>
+                                entry.target.setAttribute(
+                                    "data-reveal-state",
+                                    "visible",
+                                );
+                                observer.unobserve(entry.target);
+                            });
+                        },
+                        {
+                            threshold: 0.18,
+                            rootMargin: "0px 0px -8% 0px",
+                        },
+                    );
+
+                    window.__sectionRevealObserver = observer;
+
+                    elements.forEach((element) => {
+                        if (
+                            element.getAttribute("data-reveal-state") ===
+                            "visible"
+                        ) {
+                            return;
+                        }
+
+                        const rect = element.getBoundingClientRect();
+                        const isAlreadyVisible =
+                            rect.top < window.innerHeight * 0.97 &&
+                            rect.bottom > 0;
+
+                        if (isAlreadyVisible) {
+                            element.setAttribute(
+                                "data-reveal-state",
+                                "visible",
+                            );
+                            return;
+                        }
+
+                        element.setAttribute("data-reveal-state", "pending");
+                        observer.observe(element);
+                    });
+                };
+
+                document.addEventListener("astro:before-swap", (event) => {
+                    event.newDocument.documentElement.dataset.revealEffects =
+                        "enabled";
+                    event.newDocument
+                        .querySelectorAll(revealSelector)
+                        .forEach((element) => {
+                            element.setAttribute(
+                                "data-reveal-state",
+                                "visible",
+                            );
+                        });
+                });
+
+                if (document.readyState === "loading") {
+                    document.addEventListener(
+                        "DOMContentLoaded",
+                        initSectionReveals,
+                        {
+                            once: true,
+                        },
+                    );
+                } else {
+                    initSectionReveals();
+                }
+
+                document.addEventListener(
+                    "astro:page-load",
+                    initSectionReveals,
+                );
+            })();
+        </script>
+    </body>
 </html>
