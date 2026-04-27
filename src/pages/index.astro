@@ -9,12 +9,8 @@ import NewsCard from "@/components/news/NewsCard.astro";
 import HorseRail from "@/components/horses/HorseRail.astro";
 import LocationMap from "@/components/ui/LocationMap.astro";
 import { getHomepageNewsEntries } from "@/lib/news";
-import {
-    benefits,
-    siteConfig,
-    trainingHighlights,
-    trustPoints,
-} from "@/lib/site";
+import { siteConfig, trainingHighlights, trustPoints } from "@/lib/site";
+import seasonOpeningImage from "../../assets/Saisoneröffnung.jpeg";
 
 const allNews = await getCollection("news", ({ data }) => !data.draft);
 const featuredNews = getHomepageNewsEntries(allNews, 3);
@@ -101,29 +97,27 @@ const homepageHorses = featuredHorses.length ? featuredHorses : allHorses;
         <SectionReveal>
             <div class="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
                 <div
-                    class="panel relative min-h-[24rem] overflow-hidden p-8 md:p-10"
+                    class="panel grid gap-6 overflow-hidden p-0 lg:grid-cols-[1.05fr_0.95fr]"
                 >
-                    <div
-                        class="absolute inset-0 bg-[linear-gradient(135deg,rgba(47,71,50,0.94),rgba(91,114,86,0.78))]"
+                    <figure
+                        class="relative min-h-[22rem] overflow-hidden lg:min-h-full"
                     >
-                    </div>
-                    <div
-                        class="absolute -right-10 top-6 h-48 w-48 rounded-full border border-white/15"
-                    >
-                    </div>
-                    <div
-                        class="absolute bottom-0 left-0 right-0 h-32 bg-[linear-gradient(180deg,transparent,rgba(0,0,0,0.18))]"
-                    >
-                    </div>
-                    <div class="relative max-w-xl text-white">
-                        <span
-                            class="eyebrow !text-[rgba(255,255,255,0.7)] before:!bg-current"
-                            >Was Voltigieren ist</span
-                        >
+                        <img
+                            src={seasonOpeningImage.src}
+                            alt="Voltigiererinnen des RFV Vorderrhön bei einer Vorführung"
+                            class="absolute inset-0 h-full w-full object-cover"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </figure>
+                    <div class="p-8 md:p-10">
+                        <span class="eyebrow">Was Voltigieren ist</span>
                         <h2 class="mt-4 text-3xl md:text-5xl">
                             Ein Teamsport aus Bewegung, Mut und Partnerschaft
                         </h2>
-                        <p class="mt-4 text-lg leading-8 text-white/80">
+                        <p
+                            class="mt-4 text-lg leading-8 text-[var(--color-soft-ink)]"
+                        >
                             Voltigieren ist turnerisch-gymnastischer Sport auf
                             dem Pferd. Dabei turnen Kinder, Jugendliche und
                             Erwachsene auf einem an der Longe laufenden Pferd.
@@ -138,7 +132,7 @@ const homepageHorses = featuredHorses.length ? featuredHorses : allHorses;
                         </p>
                     </div>
                 </div>
-                <div class="panel flex flex-col justify-between p-8 md:p-10">
+                <div class="panel p-8 md:p-10">
                     <div>
                         <span class="eyebrow">Neuigkeiten</span>
                         <h2 class="mt-4 text-3xl md:text-4xl">
@@ -151,6 +145,11 @@ const homepageHorses = featuredHorses.length ? featuredHorses : allHorses;
                                 <NewsCard entry={entry} compact />
                             ))
                         }
+                    </div>
+                    <div class="mt-8">
+                        <Button href="/news" variant="secondary">
+                            Aktuelles
+                        </Button>
                     </div>
                 </div>
             </div>
