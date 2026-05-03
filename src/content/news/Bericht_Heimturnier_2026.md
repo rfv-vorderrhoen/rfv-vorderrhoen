@@ -11,9 +11,9 @@ seoDescription: Am 25.04.26 fand unser Turnpferd- und Movieturnier in Vorderrhö
 Letzten Samstag fand in der Reithalle des Bauernhof Hahner unser Turnpferd- und Movieturnier statt. 
 
 Die Voltis von neun anderen Vereinen kamen zu uns und zeigten ihr Können. Wir haben uns gefreut, dass so viele Voltis teilgenommen haben und ihr Können bei uns gezeigt haben. 
-Von uns selbst starteten sieben Gruppen, sieben Doppel-Voltis und fünf Einzel-Voltis.🏅
+Von uns selbst starteten sieben Gruppen, sieben Doppel-Voltis und fünf Einzel-Voltis.🏅 
 
-Wir sind total begeistert gewesen vom Engagement unserer Voltis, unserer Trainerinnen und der Eltern, die fleißig beim Auf-, Abbau und den Diensten am Tag des Turniers geholfen haben.🥹 Vielen Dan dafür!🫶🏼
+Wir sind total begeistert gewesen vom Engagement unserer Voltis, unserer Trainerinnen und der Eltern, die fleißig beim Auf-, Abbau und den Diensten am Tag des Turniers geholfen haben.🥹 Vielen Dank dafür!🫶🏼
 Es macht richtig Freude zu sehen, wie viele Menschen begeistert und ehrgeizig voltigieren!❤️‍🔥🤩
 
 ![[../../../assets/Heimturnier_2026.jpeg|testtext]]
