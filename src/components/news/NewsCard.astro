@@ -31,13 +31,12 @@ const eventMonth = new Intl.DateTimeFormat("de-DE", {
 >
   <article
     class:list={[
-      "panel relative h-full overflow-hidden p-5 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-1.5 group-hover:border-[rgba(47,71,50,0.24)] group-hover:shadow-[0_24px_58px_rgba(24,31,25,0.14)] group-focus-visible:-translate-y-1.5 group-focus-visible:border-[rgba(47,71,50,0.24)] group-focus-visible:shadow-[0_24px_58px_rgba(24,31,25,0.14)] md:p-6",
+      "panel relative h-full overflow-hidden p-5 transition-all duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-1.5 group-hover:border-[var(--color-moss)] group-hover:shadow-[0_24px_58px_rgba(91,114,86,0.22)] group-focus-visible:-translate-y-1.5 group-focus-visible:border-[var(--color-moss)] group-focus-visible:shadow-[0_24px_58px_rgba(91,114,86,0.22)] md:p-6",
       entry.data.isEvent &&
         "border-[rgba(47,71,50,0.18)] bg-[linear-gradient(145deg,rgba(255,252,247,0.94),rgba(243,248,241,0.82))]",
     ]}
   >
     <div class="pointer-events-none absolute inset-x-6 top-0 h-px origin-left scale-x-60 bg-[linear-gradient(90deg,transparent,rgba(47,71,50,0.38),transparent)] opacity-60 transition duration-300 group-hover:scale-x-100 group-hover:opacity-100 group-focus-visible:scale-x-100 group-focus-visible:opacity-100"></div>
-    <div class="news-card-glow pointer-events-none absolute -right-10 -top-4 h-56 w-56 bg-[radial-gradient(circle,rgba(91,114,86,0.36)_0%,rgba(91,114,86,0.22)_34%,transparent_72%)]"></div>
     {
       entry.data.isEvent ? (
         <div class:list={["relative z-10 grid items-start gap-4", compact ? "grid-cols-[4.6rem_1fr]" : "grid-cols-[5.4rem_1fr]"]}>
