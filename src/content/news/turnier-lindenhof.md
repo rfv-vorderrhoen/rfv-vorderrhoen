@@ -5,7 +5,7 @@ date: 2026-03-21
 isEvent: false
 featured: true
 seoTitle: Turnier Lindenhof | Bericht
-seoDescription: Besuche RFV Vorderrhön beim offenen Stalltag und erlebe, wie unser Training aufgebaut ist.
+seoDescription: Am 21.03. starteten einige Voltis beim Turnier in Lindenhof.
 ---
 
 Am Samstag, den 21. März 2026, begann offiziell die Turniersaison für einen Teil unserer Voltis. 
