@@ -1,6 +1,6 @@
 ---
 title: Bericht zu unserem Heimturnier 2026
-description: Am Samstag fand unser Turnpferd- und Movieturnier statt
+description: Am Samstag, den 25.04.26, fand unser Turnpferd- und Movieturnier statt
 date: 2026-04-25
 isEvent: false
 featured: true
