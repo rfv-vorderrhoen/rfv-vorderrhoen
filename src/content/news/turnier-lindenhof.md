@@ -15,4 +15,4 @@ Auch Greta und Mia hatten ihr Doppel-Debüt. Die beiden wurden 10.
 
 Im Großen und Ganzen liefen die Küren wie geplant, sodass die Voltis sich nach einem ersten gelungenen Turnier auf die noch Folgenden freuen.
 
-Fotos findest du auf [Instagram] (https://www.instagram.com/p/DX48Zu5DisZ/?igsh=dzFjbzV5MXNib3Ew)
+Fotos findest du auf [Instagram] (https://www.instagram.com/p/DWN_zmIiPY8/?igsh=dGI1c2xocmpqdG1i)
