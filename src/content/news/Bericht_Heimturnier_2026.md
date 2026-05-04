@@ -13,7 +13,10 @@ Letzten Samstag fand in der Reithalle des Bauernhof Hahner unser Turnpferd- und 
 Die Voltis von neun anderen Vereinen kamen zu uns und zeigten ihr Können. Wir haben uns gefreut, dass so viele Voltis teilgenommen haben und ihr Können bei uns gezeigt haben. 
 Von uns selbst starteten sieben Gruppen, sieben Doppel-Voltis und fünf Einzel-Voltis.🏅 
 
-Wir sind total begeistert gewesen vom Engagement unserer Voltis, unserer Trainerinnen und der Eltern, die fleißig beim Auf-, Abbau und den Diensten am Tag des Turniers geholfen haben.🥹 Vielen Dank dafür!🫶🏼
 Es macht richtig Freude zu sehen, wie viele Menschen begeistert und ehrgeizig voltigieren!❤️‍🔥🤩
+
+Wir sind total begeistert gewesen vom Engagement unserer Voltis, unserer Trainerinnen und der Eltern, die fleißig beim Auf-, Abbau und den Diensten am Tag des Turniers geholfen haben.🥹 Vielen Dank dafür!🫶🏼
+
+Ein herzliches Dankeschön geht auch an Andreas Hahner, den Hofbesitzer und ehemaligen ersten Vorsitzenden des RFV Vorderrhön. Er stellt uns immer wieder sein Material zur Verfügung und steht uns mit Rat und Tat zur Seite. Auch die Zusammenarbeit mit den Richterinnen Michaela Hohlmeier und Petra Sandner hat uns gut gefallen, ebenso wie die Unterstützung durch das DRK Künzell. 
 
 ![[../../../assets/Heimturnier_2026.jpeg|testtext]]
