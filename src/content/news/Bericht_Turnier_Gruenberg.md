@@ -6,6 +6,7 @@ isEvent: false
 featured: true
 seoTitle: Turnier Grünberg | Bericht
 seoDescription: Am 03.05.2026 fand in Grünberg ein Turnier statt.
+image: "../../../assets/Gruenberg_V4.jpeg"
 ---
 
 Am Sonntag, den 03.05.26, waren Vorderrhön 3 und 4 in Grünberg auf dem Turnier. 
@@ -19,4 +20,4 @@ Es war schön, nach den vergangenen Turnpferdturnieren jetzt auch endlich wieder
 Mehr Fotos findest du auf [Instagram](https://www.instagram.com/p/DX48Zu5DisZ/?igsh=dzFjbzV5MXNib3Ew).
 
 ![[../../../assets/Gruenberg_V3.jpeg|Vorderrhön 3]]
-![[../../../assets/Gruenberg_V4.jpeg|Vorderrhön 4]]
+
