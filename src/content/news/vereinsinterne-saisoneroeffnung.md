@@ -14,4 +14,6 @@ Alle Voltis haben ihren Eltern und Freunden gezeigt, woran sie über den Winter 
 Und auch für unsere Pferde war die besondere Situation eine gute Übung.
 Jetzt freuen wir uns auf die kommenden Turniere und sind gespannt, was uns die neue Saison so bringt.
 
+Weitere Fotos findest du auf [Instagram](https://www.instagram.com/p/DWBsdGPiJ5W/?igsh=cmNjczFjNmhleWdv)
+
 ![[../../../assets/Saisoneröffnung 2.jpeg|testtext]]
