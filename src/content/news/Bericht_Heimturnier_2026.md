@@ -19,4 +19,6 @@ Wir sind total begeistert gewesen vom Engagement unserer Voltis, unserer Trainer
 
 Ein herzliches Dankeschön geht auch an Andreas Hahner, den Hofbesitzer und ehemaligen ersten Vorsitzenden des RFV Vorderrhön. Er stellt uns immer wieder sein Material zur Verfügung und steht uns mit Rat und Tat zur Seite. Auch die Zusammenarbeit mit den Richterinnen Michaela Hohlmeier und Petra Sandner hat uns gut gefallen, ebenso wie die Unterstützung durch das DRK Künzell. 
 
+Mehr Fotos findest du auf unserem [Instagram](https://www.instagram.com/p/DX2VJoejcwq/?igsh=MXlrazk0cnV2OXg2).
+
 ![[../../../assets/Heimturnier_2026.jpeg|testtext]]
