@@ -1,6 +1,6 @@
 ---
 title: Bericht zum Turnier in Lindenhof
-description: Am Samstag startete für einige unserer Voltis die Turniersaison
+description: Am Samstag, den 21.03.26, startete für einige unserer Voltis die Turniersaison
 date: 2026-03-21
 isEvent: false
 featured: true
@@ -14,3 +14,5 @@ Außerdem starteten Caroline und Hannah im Doppel. Sie erreichten den vierten Pl
 Auch Greta und Mia hatten ihr Doppel-Debüt. Die beiden wurden 10. 
 
 Im Großen und Ganzen liefen die Küren wie geplant, sodass die Voltis sich nach einem ersten gelungenen Turnier auf die noch Folgenden freuen.
+
+Fotos findest du auf [Instagram] (https://www.instagram.com/p/DX48Zu5DisZ/?igsh=dzFjbzV5MXNib3Ew)
