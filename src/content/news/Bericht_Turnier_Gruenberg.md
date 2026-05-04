@@ -1,6 +1,6 @@
 ---
 title: Bericht zum Turnier in Grünberg
-description: Am Sonntag starteten Vorderrhön 3 und 4 in Grünberg
+description: Am Sonntag, den 03.05.26, starteten Vorderrhön 3 und 4 in Grünberg
 date: 2026-05-03
 isEvent: false
 featured: true
@@ -16,5 +16,7 @@ Nachmittags erreichte Vorderrhön 4 mit Hulapalu, Eva an der Longe und Vanessa a
 
 Es war schön, nach den vergangenen Turnpferdturnieren jetzt auch endlich wieder mit Pferd starten zu können! 🤩🐎
 
-![[../../../assets/Gruenberg_V3.jpeg|testtext]]
-![[../../../assets/Gruenberg_V4.jpeg|testtext]]
+Mehr Fotos findest du auf [Instagram](https://www.instagram.com/p/DX48Zu5DisZ/?igsh=dzFjbzV5MXNib3Ew).
+
+![[../../../assets/Gruenberg_V3.jpeg|Vorderrhön 3]]
+![[../../../assets/Gruenberg_V4.jpeg|Vorderrhön 4]]
