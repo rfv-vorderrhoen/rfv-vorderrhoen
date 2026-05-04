@@ -16,4 +16,4 @@ Jetzt freuen wir uns auf die kommenden Turniere und sind gespannt, was uns die n
 
 Weitere Fotos findest du auf [Instagram](https://www.instagram.com/p/DWBsdGPiJ5W/?igsh=cmNjczFjNmhleWdv)
 
-![[../../../assets/Saisoneröffnung 2.jpeg|testtext]]
+![[../../../assets/Saisoneröffnung 2.jpeg|eine Kürübung von Vorderrhön 4]]
