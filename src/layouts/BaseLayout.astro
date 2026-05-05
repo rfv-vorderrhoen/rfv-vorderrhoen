@@ -18,7 +18,7 @@ const {
     image = withBase("/social-card.svg"),
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
-const faviconHref = withBase("/favicon.svg");
+const faviconHref = withBase("/favicon.ico");
 ---
 
 <!doctype html>
@@ -46,8 +46,7 @@ const faviconHref = withBase("/favicon.svg");
         <meta name="twitter:description" content={description} />
         <link
             rel="icon"
-            type="image/svg+xml"
-            sizes="any"
+            type="image/x-icon"
             href={faviconHref}
         />
         <link rel="shortcut icon" href={faviconHref} />
