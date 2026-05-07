@@ -1,6 +1,6 @@
 ---
 name: Fördermitglied
-groupLabel: Vereinsmitgliedschaft
+groupLabel: Zusätzliche Beteiligung
 description: Mitgliedschaft für Erwachsene, die den Verein unterstützen möchten, ohne regelmäßig aktiv zu trainieren.
 features:
   - Für erwachsene unterstützende Mitglieder
