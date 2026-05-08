@@ -22,11 +22,6 @@ type MembershipBlock = {
     note: string;
     items: PricingEntry[];
 };
-type MembershipFitRow = {
-    situation: string;
-    structure: string;
-    note: string;
-};
 
 const membershipGroupLabel = "Vereinsmitgliedschaft";
 const trainingGroupLabel = "Aktive Trainingsmitgliedschaft";
@@ -43,33 +38,6 @@ let clubMemberships: PricingEntry[] = [];
 let trainingMemberships: PricingEntry[] = [];
 let additionalMemberships: PricingEntry[] = [];
 let membershipBlocks: MembershipBlock[] = [];
-const membershipFitRows: MembershipFitRow[] = [
-    {
-        situation: "Kind oder Jugendliche:r trainiert",
-        structure: "Kinder bis 18 Jahren + aktive Teilnahme",
-        note: "Ein oder zwei feste Trainingstermine pro Woche, passend zur Gruppe.",
-    },
-    {
-        situation: "Erwachsene Person trainiert",
-        structure: "Erwachsene + aktive Teilnahme",
-        note: "Für volljährige aktive Mitglieder im regulären Trainingsbetrieb.",
-    },
-    {
-        situation: "Mehrere Familienmitglieder sind dabei",
-        structure: "Familien + aktive Teilnahme für trainierende Mitglieder",
-        note: "Sinnvoll, wenn die Mitgliedschaft gemeinsam organisiert werden soll.",
-    },
-    {
-        situation: "Unterstützung ohne regelmäßiges Training",
-        structure: "Fördermitglied",
-        note: "Für erwachsene unterstützende Mitglieder ohne aktive Teilnahme.",
-    },
-    {
-        situation: "Reitbeteiligung oder individuelle Pferdearbeit",
-        structure: "Mitgliedschaft + persönliche Absprache",
-        note: "Nur nach Eignung, Verantwortung und verfügbarer Kapazität.",
-    },
-];
 
 if (entry.slug === "pricing") {
     clubMemberships = pricingEntries.filter(
@@ -91,7 +59,7 @@ if (entry.slug === "pricing") {
             title: "Vereinsmitgliedschaft",
             description:
                 "Die Grundlage für Personen oder Familien, die Teil des Vereins sind.",
-            note: "Eine Form reicht als Basis.",
+            note: "Die Grundlage.",
             items: clubMemberships,
         },
         {
@@ -105,7 +73,7 @@ if (entry.slug === "pricing") {
         },
         {
             key: "additional-options",
-            eyebrow: "Individuell",
+            eyebrow: "Extra",
             title: "Zusätzliche Beteiligung",
             description:
                 "Für unterstützende Mitgliedschaft oder besondere Formen wie Reitbeteiligung.",
@@ -162,9 +130,7 @@ if (entry.slug === "pricing") {
                                     <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-forest)] text-sm font-semibold text-[var(--color-cream-strong)]">
                                         {String(index + 1).padStart(2, "0")}
                                     </span>
-                                    <span class="eyebrow">
-                                        {block.eyebrow}
-                                    </span>
+                                    <span class="eyebrow">{block.eyebrow}</span>
                                 </div>
                                 <h3 class="mt-5 text-2xl leading-tight md:text-3xl">
                                     {block.title}
@@ -184,57 +150,11 @@ if (entry.slug === "pricing") {
                                         </li>
                                     ))}
                                 </ul>
-                                <p class="mt-5 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-moss)]">
+                                <p class="mt-auto pt-5 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-moss)]">
                                     {block.note}
                                 </p>
                             </article>
                         ))}
-                    </div>
-                </Section>
-
-                <Section spaced={false} className="pb-8 pt-0 md:pb-10">
-                    <div class="panel overflow-hidden">
-                        <div class="border-b border-[var(--color-line)] p-6 md:p-8">
-                            <span class="eyebrow">Einordnung</span>
-                            <h2 class="mt-3 text-3xl md:text-4xl">
-                                Was passt zu mir?
-                            </h2>
-                        </div>
-                        <div class="hidden grid-cols-[0.9fr_1fr_1.1fr] gap-5 border-b border-[var(--color-line)] bg-white/45 px-6 py-3 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-moss)] md:grid md:px-8">
-                            <span>Situation</span>
-                            <span>Passende Struktur</span>
-                            <span>Hinweis</span>
-                        </div>
-                        <div class="divide-y divide-[var(--color-line)]">
-                            {membershipFitRows.map((row) => (
-                                <div class="grid gap-4 px-6 py-5 md:grid-cols-[0.9fr_1fr_1.1fr] md:gap-5 md:px-8">
-                                    <div>
-                                        <span class="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-moss)] md:hidden">
-                                            Situation
-                                        </span>
-                                        <p class="mt-1 font-semibold md:mt-0">
-                                            {row.situation}
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <span class="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-moss)] md:hidden">
-                                            Passende Struktur
-                                        </span>
-                                        <p class="mt-1 text-[var(--color-forest)] md:mt-0">
-                                            {row.structure}
-                                        </p>
-                                    </div>
-                                    <div>
-                                        <span class="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-moss)] md:hidden">
-                                            Hinweis
-                                        </span>
-                                        <p class="mt-1 text-sm leading-7 text-[var(--color-soft-ink)] md:mt-0">
-                                            {row.note}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
                     </div>
                 </Section>
 
@@ -335,11 +255,7 @@ if (entry.slug === "pricing") {
                                                     height="17"
                                                     rx="5"
                                                 />
-                                                <circle
-                                                    cx="12"
-                                                    cy="12"
-                                                    r="4"
-                                                />
+                                                <circle cx="12" cy="12" r="4" />
                                                 <circle
                                                     cx="17.35"
                                                     cy="6.65"
