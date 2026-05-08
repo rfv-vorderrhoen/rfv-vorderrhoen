@@ -4,7 +4,6 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import PageIntro from "@/components/ui/PageIntro.astro";
 import Section from "@/components/ui/Section.astro";
 import Button from "@/components/ui/Button.astro";
-import MembershipCards from "@/components/ui/MembershipCards";
 import FaqAccordion from "@/components/ui/FaqAccordion";
 import GoogleFormEmbed from "@/components/forms/GoogleFormEmbed.astro";
 import LocationMap from "@/components/ui/LocationMap.astro";
@@ -15,11 +14,12 @@ interface Props {
 }
 
 type PricingEntry = CollectionEntry<"pricing">;
-type MembershipSection = {
+type MembershipBlock = {
     key: string;
     eyebrow: string;
     title: string;
     description: string;
+    note: string;
     items: PricingEntry[];
 };
 
@@ -34,51 +34,53 @@ const pricingEntries =
               (a, b) => (a.data.order ?? 99) - (b.data.order ?? 99),
           )
         : [];
-const membershipSections: MembershipSection[] = [];
+let clubMemberships: PricingEntry[] = [];
+let trainingMemberships: PricingEntry[] = [];
+let additionalMemberships: PricingEntry[] = [];
+let membershipBlocks: MembershipBlock[] = [];
 
 if (entry.slug === "pricing") {
-    const clubMemberships = pricingEntries.filter(
+    clubMemberships = pricingEntries.filter(
         (item) => item.data.groupLabel === membershipGroupLabel,
     );
-    const trainingMemberships = pricingEntries.filter(
+    trainingMemberships = pricingEntries.filter(
         (item) => item.data.groupLabel === trainingGroupLabel,
     );
-    const additionalMemberships = pricingEntries.filter(
+    additionalMemberships = pricingEntries.filter(
         (item) =>
             item.data.groupLabel !== membershipGroupLabel &&
             item.data.groupLabel !== trainingGroupLabel,
     );
 
-    if (clubMemberships.length > 0) {
-        membershipSections.push({
+    membershipBlocks = [
+        {
             key: "club-memberships",
             eyebrow: "Verein",
             title: "Vereinsmitgliedschaft",
-            description: "Die passende Mitgliedschaft im Verein.",
+            description:
+                "Die Grundlage für Personen oder Familien, die Teil des Vereins sind.",
+            note: "Die Grundlage.",
             items: clubMemberships,
-        });
-    }
-
-    if (trainingMemberships.length > 0) {
-        membershipSections.push({
+        },
+        {
             key: "active-training",
             eyebrow: "Training",
             title: "Aktive Teilnahme",
             description:
-                "Zusätzlich zur Vereinsmitgliedschaft für aktive Voltigiererinnen und Voltigierer.",
+                "Kommt nur dazu, wenn jemand regelmäßig am Voltigiertraining teilnimmt.",
+            note: "Zusätzlich zur Vereinsmitgliedschaft.",
             items: trainingMemberships,
-        });
-    }
-
-    if (additionalMemberships.length > 0) {
-        membershipSections.push({
+        },
+        {
             key: "additional-options",
-            eyebrow: "Zusätzlich",
-            title: "Weitere Optionen",
-            description: "Individuell nach Absprache.",
+            eyebrow: "Extra",
+            title: "Zusätzliche Beteiligung",
+            description:
+                "Für unterstützende Mitgliedschaft oder besondere Formen wie Reitbeteiligung.",
+            note: "Je nach Form nach persönlicher Absprache.",
             items: additionalMemberships,
-        });
-    }
+        },
+    ].filter((block) => block.items.length > 0);
 }
 ---
 
@@ -105,64 +107,54 @@ if (entry.slug === "pricing") {
     {
         entry.slug === "pricing" && (
             <>
-                {membershipSections.map((section) => (
-                    <Section
-                        spaced={false}
-                        className="pb-8 pt-0 md:pb-10"
-                        id={section.key}
-                    >
-                        <div class="max-w-3xl">
-                            <span class="eyebrow">{section.eyebrow}</span>
-                            <h2 class="mt-3 text-3xl md:text-4xl">
-                                {section.title}
-                            </h2>
-                            <p class="mt-4 text-[var(--color-soft-ink)]">
-                                {section.description}
-                            </p>
-                        </div>
-                        <div class="mt-6">
-                            <MembershipCards
-                                client:visible
-                                items={section.items.map((item) => ({
-                                    id: item.id,
-                                    data: {
-                                        name: item.data.name,
-                                        description: item.data.description,
-                                        features: item.data.features,
-                                        highlighted: item.data.highlighted,
-                                    },
-                                }))}
-                            />
-                        </div>
-                    </Section>
-                ))}
-
                 <Section spaced={false} className="pb-8 pt-0 md:pb-10">
-                    <div class="panel p-8 md:p-10">
-                        <span class="eyebrow">Wichtig</span>
-                        <ul class="mt-6 space-y-3 text-sm text-[var(--color-soft-ink)]">
-                            <li class="flex gap-3">
-                                <span class="mt-1.5 h-2 w-2 rounded-full bg-[var(--color-moss)]" />
-                                <span>
-                                    Vereinsmitgliedschaft und aktive Teilnahme
-                                    werden getrennt betrachtet.
-                                </span>
-                            </li>
-                            <li class="flex gap-3">
-                                <span class="mt-1.5 h-2 w-2 rounded-full bg-[var(--color-moss)]" />
-                                <span>
-                                    Fördermitgliedschaft ist ohne regelmäßige
-                                    aktive Teilnahme gedacht.
-                                </span>
-                            </li>
-                            <li class="flex gap-3">
-                                <span class="mt-1.5 h-2 w-2 rounded-full bg-[var(--color-moss)]" />
-                                <span>
-                                    Reitbeteiligungen und Details klären wir
-                                    individuell.
-                                </span>
-                            </li>
-                        </ul>
+                    <div class="max-w-3xl">
+                        <span class="eyebrow">Struktur</span>
+                        <h2 class="mt-3 text-3xl md:text-4xl">
+                            Mitgliedschaft als Bausteine
+                        </h2>
+                        <p class="mt-4 text-[var(--color-soft-ink)]">
+                            Erst die passende Vereinsmitgliedschaft, dann bei
+                            aktivem Training die Teilnahmeform. Individuelle
+                            Optionen klären wir separat.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 grid gap-5 lg:grid-cols-3">
+                        {membershipBlocks.map((block, index) => (
+                            <article
+                                class="panel flex h-full flex-col p-6 md:p-7"
+                                id={block.key}
+                            >
+                                <div class="flex items-center gap-3">
+                                    <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-forest)] text-sm font-semibold text-[var(--color-cream-strong)]">
+                                        {String(index + 1).padStart(2, "0")}
+                                    </span>
+                                    <span class="eyebrow">{block.eyebrow}</span>
+                                </div>
+                                <h3 class="mt-5 text-2xl leading-tight md:text-3xl">
+                                    {block.title}
+                                </h3>
+                                <p class="mt-4 text-sm leading-7 text-[var(--color-soft-ink)]">
+                                    {block.description}
+                                </p>
+                                <ul class="mt-6 divide-y divide-[var(--color-line)] border-y border-[var(--color-line)]">
+                                    {block.items.map((item) => (
+                                        <li class="py-3">
+                                            <p class="font-semibold leading-6">
+                                                {item.data.name}
+                                            </p>
+                                            <p class="mt-1 text-sm leading-6 text-[var(--color-soft-ink)]">
+                                                {item.data.description}
+                                            </p>
+                                        </li>
+                                    ))}
+                                </ul>
+                                <p class="mt-auto pt-5 text-xs font-semibold uppercase tracking-[0.14em] text-[var(--color-moss)]">
+                                    {block.note}
+                                </p>
+                            </article>
+                        ))}
                     </div>
                 </Section>
 
@@ -263,11 +255,7 @@ if (entry.slug === "pricing") {
                                                     height="17"
                                                     rx="5"
                                                 />
-                                                <circle
-                                                    cx="12"
-                                                    cy="12"
-                                                    r="4"
-                                                />
+                                                <circle cx="12" cy="12" r="4" />
                                                 <circle
                                                     cx="17.35"
                                                     cy="6.65"

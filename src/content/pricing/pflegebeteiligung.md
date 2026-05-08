@@ -1,7 +1,7 @@
 ---
-name: Fördermitglied
+name: Pflegebeteiligung
 groupLabel: Zusätzliche Beteiligung
-description: Mitgliedschaft für Erwachsene, die den Verein unterstützen möchten, ohne regelmäßig aktiv zu trainieren.
+description: Pflege und Beschäftigung unserer Vereinspferde.
 features:
   - Für erwachsene unterstützende Mitglieder
   - Ohne regelmäßige aktive Teilnahme am Sportangebot
