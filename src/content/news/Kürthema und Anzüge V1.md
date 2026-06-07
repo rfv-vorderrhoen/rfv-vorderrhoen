@@ -1,5 +1,5 @@
 ---
-title: das Kürthema von Vorderrhön 1
+title: Das Kürthema von Vorderrhön 1
 description: Erfahre, woher das Thema "Horrorshow" kommt und was es mit dem Drama um die Anzüge von Vorderrhön 1 auf sich hat
 date: 2026-05-30
 isEvent: false
