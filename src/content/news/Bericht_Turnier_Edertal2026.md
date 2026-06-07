@@ -17,7 +17,7 @@ Auch für Vorderrhön 1 startete die Saison. Das Team konnte nach längerer Zeit
 Am Sonntag, den 31.05., begann der Turniertag für uns mit dem Voltigiernachwuchspferde-Wettbewerb. Dort konnte Rocky das erste Mal Turnierluft schnuppern. Aufgrund des Regens hatte Vanessa leider nicht so viel Zeit zum Ablongieren. Im Prüfungszirkel konnten wir einmal mehr feststellen, dass Rocky sich in unbekannten oder aufregenden Situationen sicherer mit Volti auf sich fühlt. 🐭 Wir sind dankbar für das Feedback und arbeiten weiter fleißig an seiner Ausbildung. 🐎
 
 Vormittags starteten dann das erste Mal so viele Vorderrhöner Einzel-Voltis auf einem Turnier, wie nie zuvor.
-Julia W., Hannah und Klara voltigierten auf Prince mit Heidi an der Longe und Valentina als Helferin. Helena, Julia J. und Sophie starteten auf Hulapalu mit Eva an der Longe und Caroline als Helferin.
+Julia W., Hannah und Klara voltigierten auf Prince mit Heidi an der Longe und Valentina als Helferin. Helena, Julia J. und Sophie starteten auf Hulapalu mit Eva an der Longe und Lea als Helferin.
 Die Mädels haben folgende Kür-Themen: 
 - Julia W. - Avatar 🩵
 - Hannah - Rio 🦜
