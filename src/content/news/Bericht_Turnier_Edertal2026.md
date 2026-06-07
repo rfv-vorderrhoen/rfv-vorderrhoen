@@ -5,7 +5,7 @@ date: 2026-05-30
 isEvent: false
 featured: true
 seoTitle: Turnier Edertal | Bericht
-seoDescription: Am 30. und 31..05.2026 fand in Edertal ein Turnier statt.
+seoDescription: Am 30. und 31.05.2026 fand in Edertal ein Turnier statt.
 image: "../../../assets/Edertal_Einzel.jpg"
 ---
 
