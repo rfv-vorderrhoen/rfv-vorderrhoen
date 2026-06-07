@@ -5,7 +5,7 @@ date: 2026-05-30
 isEvent: false
 featured: true
 seoTitle: Kürthema von Vorderrhön 1 | Bericht
-seoDescription: Am 30.05.2026 startete Vorderrhön 1 mit dem neuen Kürthema in Edertal
+seoDescription: Am 30.05.2026 startete Vorderrhön 1 mit einem neuen Kürthema in Edertal
 image: "../../../assets/Horroranzuege_V1.jpg"
 ---
 
