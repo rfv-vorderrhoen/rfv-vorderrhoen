@@ -6,7 +6,7 @@ isEvent: false
 featured: true
 seoTitle: Turnier Edertal | Bericht
 seoDescription: Am 30. und 31..05.2026 fand in Edertal ein Turnier statt.
-image: "../../../assets/Gruenberg_V4.jpeg"
+image: "../../../assets/Edertal_Einzel.jpg"
 ---
 
 Ende Mai waren wir mit allen Pferden, die derzeit bei uns im Voltieinsatz sind, auf dem Turnier in Edertal.
@@ -25,6 +25,6 @@ Die Mädels haben folgende Kür-Themen:
 - Sophie - Farben🌈
 Am Nachmittag fand die Prüfung der Schrittgruppen statt. Vorderrhön 5 startete dort das erste Mal auf Prince an einem Turnier. Die Gruppe war zufrieden mit ihrer Leistung und erhielt bei der Siegerehrung grüne Schleifen. 💚 Die schon turnier-erfahreneren Voltis von Vorderrhön 4 erreichten den ersten Platz.✨
 
-Mehr Fotos findest du auf [Instagram](https://www.instagram.com/p/DX48Zu5DisZ/?igsh=dzFjbzV5MXNib3Ew).
+Mehr Fotos findest du auf [Instagram](https://www.instagram.com/p/DZPlXKRjqEo/?igsh=MncyaHZsM3JocHY3).
 
-![[../../../assets/Gruenberg_V3.jpeg|Vorderrhön 3]]
+![[../../../assets/Edertal_Sturmius.jpg|Sturmius auf Bolty]]
