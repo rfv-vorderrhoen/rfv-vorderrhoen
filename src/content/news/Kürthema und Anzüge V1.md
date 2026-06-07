@@ -12,7 +12,7 @@ image: "../../../assets/Horroranzuege_V1.jpg"
 Letzte Saison konnte Vorderrhön 1 sich genug Aufstiegsnoten sichern, sodass das Team diese Saison wieder in der Leistungsklasse M starten kann.🥳
 
 Die Breuls-Schwestern nahmen das als Möglichkeit, um endlich Alex' und Pinos Engagement angemessen zu würdigen: sie ließen sich vom Lied "Hier kommt Alex" der Toten Hosen inspirieren, das von deren Sänger Campino gesungen wird, und überzeugten das restliche Team vom Thema "Horrorshow".🧛🏽🧙🏼‍♀️🦇🤡🎩
-Der Verein wollte dem Team hierfür Anzüge bezahlen und diese wurden bei einer Schneiderin in Auftrag gegeben. Sie sollten bis zum ersten Turnier der Saison fertiggestellt werden.🪡
+Der Verein wollte dem Team hierfür Anzüge nähen lassen und diese wurden bei einer Schneiderin in Auftrag gegeben. Sie sollten bis zum ersten Turnier der Saison fertiggestellt werden.🪡
 
 Viele Nachrichten, Anrufe und Verzweiflung später stellte sich heraus, dass sich diese Zusage nicht erfüllen würde. 🤯
 
