@@ -85,6 +85,7 @@ export function getCalendarLinks(
 ) {
   const range = getEventRange(entry);
   const details = getEventDescription(entry, site);
+  const location = entry.data.location;
   const params = new URLSearchParams({
     action: "TEMPLATE",
     text: entry.data.title,
@@ -94,6 +95,10 @@ export function getCalendarLinks(
         : `${formatCalendarDate(range.start)}/${formatCalendarDate(range.end)}`,
     details,
   });
+  if (location) {
+    params.set("location", location);
+  }
+
   const outlookParams = new URLSearchParams({
     path: "/calendar/action/compose",
     rru: "addevent",
@@ -109,6 +114,9 @@ export function getCalendarLinks(
         ? range.end.toISOString()
         : formatCalendarIsoDate(range.end),
   });
+  if (location) {
+    outlookParams.set("location", location);
+  }
 
   return {
     google: `https://calendar.google.com/calendar/render?${params.toString()}`,
@@ -144,6 +152,9 @@ export function buildCalendarFile(
         ]),
     `SUMMARY:${escapeIcsText(entry.data.title)}`,
     `DESCRIPTION:${escapeIcsText(description)}`,
+    ...(entry.data.location
+      ? [`LOCATION:${escapeIcsText(entry.data.location)}`]
+      : []),
     `URL:${escapeIcsText(articleUrl)}`,
     "END:VEVENT",
     "END:VCALENDAR",

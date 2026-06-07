@@ -30,6 +30,7 @@ const news = defineCollection({
       isEvent: z.boolean().default(false),
       eventStart: z.coerce.date().optional(),
       eventEnd: z.coerce.date().optional(),
+      location: z.string().trim().min(1).optional(),
       image: image().optional(),
       imageAlt: z.string().optional(),
       draft: z.boolean().optional(),

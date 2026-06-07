@@ -16,21 +16,11 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
-const eventDay = new Intl.DateTimeFormat("de-DE", {
-    day: "2-digit",
-    timeZone: "UTC",
-}).format(entry.data.date);
-const eventMonth = new Intl.DateTimeFormat("de-DE", {
-    month: "short",
-    timeZone: "UTC",
-})
-    .format(entry.data.date)
-    .replace(".", "")
-    .toUpperCase();
-const eventWeekday = new Intl.DateTimeFormat("de-DE", {
-    weekday: "long",
-    timeZone: "UTC",
-}).format(entry.data.date);
+const eventLocation = entry.data.location;
+const eventLocationQuery = eventLocation ? encodeURIComponent(eventLocation) : "";
+const eventMapsEmbedUrl = eventLocation
+    ? `https://www.google.com/maps?q=${eventLocationQuery}&output=embed`
+    : "";
 ---
 
 <BaseLayout
@@ -42,37 +32,49 @@ const eventWeekday = new Intl.DateTimeFormat("de-DE", {
         {
             entry.data.isEvent ? (
                 <div class="panel relative z-20 overflow-visible px-6 py-8 md:px-10 md:py-10">
-                    <div class="grid gap-6 lg:grid-cols-[auto_1fr] lg:items-center">
-                        <div class="relative z-10 w-fit rounded-[1.7rem] border border-[rgba(247,240,226,0.14)] bg-[linear-gradient(145deg,rgba(47,71,50,0.98),rgba(91,114,86,0.84))] px-6 py-5 text-center text-[var(--color-cream-strong)] shadow-[0_20px_40px_rgba(24,31,25,0.18)]">
-                            <span class="block text-[0.78rem] font-semibold uppercase tracking-[0.18em] text-[rgba(247,240,226,0.76)]">
-                                {eventMonth}
-                            </span>
-                            <span class="mt-3 block text-6xl font-semibold leading-none md:text-7xl">
-                                {eventDay}
-                            </span>
-                            <span class="mt-3 block text-[0.72rem] font-semibold uppercase tracking-[0.14em] text-[rgba(247,240,226,0.72)]">
-                                {eventWeekday}
-                            </span>
-                        </div>
-                        <div class="relative z-10 min-w-0 max-w-3xl">
-                            <div class="flex flex-wrap items-center gap-3">
-                                <span class="rounded-full border border-[rgba(47,71,50,0.12)] bg-white/82 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-[var(--color-forest)]">
-                                    Veranstaltung
-                                </span>
-                                <p class="min-w-0 text-sm font-semibold uppercase tracking-[0.16em] text-[var(--color-moss)]">
-                                    {formatDate(entry.data.date)}
+                    <div
+                        class:list={[
+                            "grid gap-8",
+                            eventLocation &&
+                                "xl:grid-cols-[minmax(0,1fr)_minmax(20rem,0.78fr)] xl:items-stretch",
+                        ]}
+                    >
+                        <div class="grid items-center">
+                            <div class="relative z-10 min-w-0 max-w-3xl">
+                                <div class="flex flex-wrap items-center gap-3">
+                                    <span class="rounded-full border border-[rgba(47,71,50,0.12)] bg-white/82 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-[var(--color-forest)]">
+                                        Veranstaltung
+                                    </span>
+                                    <p class="min-w-0 text-sm font-semibold uppercase tracking-[0.16em] text-[var(--color-moss)]">
+                                        {formatDate(entry.data.date)}
+                                    </p>
+                                </div>
+                                <h1 class="mt-5 text-4xl leading-tight md:text-6xl">
+                                    {entry.data.title}
+                                </h1>
+                                <p class="mt-5 max-w-2xl text-lg leading-8 text-[var(--color-soft-ink)] md:text-xl">
+                                    {entry.data.description}
                                 </p>
-                            </div>
-                            <h1 class="mt-5 text-4xl leading-tight md:text-6xl">
-                                {entry.data.title}
-                            </h1>
-                            <p class="mt-5 max-w-2xl text-lg leading-8 text-[var(--color-soft-ink)] md:text-xl">
-                                {entry.data.description}
-                            </p>
-                            <div class="mt-6">
-                                <EventCalendarActions entry={entry} />
+                                <div class="mt-6">
+                                    <EventCalendarActions entry={entry} />
+                                </div>
                             </div>
                         </div>
+                        {
+                            eventLocation && (
+                                <div class="relative z-10 min-h-[20rem] overflow-hidden rounded-[1.2rem] bg-white shadow-[0_18px_36px_rgba(24,31,25,0.1)] xl:min-h-full">
+                                    <iframe
+                                        src={eventMapsEmbedUrl}
+                                        title={`Karte: ${entry.data.title}`}
+                                        loading="lazy"
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        allowfullscreen
+                                        class="absolute inset-0 h-full w-full border-0 bg-white"
+                                        style="filter: saturate(0.82) sepia(0.04) contrast(1.03);"
+                                    />
+                                </div>
+                            )
+                        }
                     </div>
                 </div>
             ) : (

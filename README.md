@@ -148,7 +148,8 @@ description: Unser Sommerfest mit Showprogramm und Verpflegung.
 date: 2026-08-15
 isEvent: true
 eventStart: 2026-08-15
-eventEnd: 2026-08-15
+eventEnd: 2026-08-16
+location: "Fuldaer Str. 14, 36093 Künzell, Deutschland"
 image: "../../../assets/sommerfest.jpg"
 imageAlt: Besucherinnen und Besucher beim Sommerfest
 seoTitle: Sommerfest | RFV Vorderrhön
@@ -164,6 +165,7 @@ Important notes:
 - Set `isEvent: true` for anything that belongs in the event planner and event list.
 - If you use `eventStart` or `eventEnd`, you must provide both.
 - `eventEnd` must be after `eventStart`.
+- Add `location` to event frontmatter to show an embedded Google Maps section on the event detail page and include the place in calendar links.
 - `draft: true` hides the entry from the site.
 - `image` in news frontmatter uses Astro's content image handling and should be a path relative to the markdown file.
 

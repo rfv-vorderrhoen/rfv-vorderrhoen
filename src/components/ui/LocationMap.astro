@@ -6,6 +6,11 @@ interface Props {
     eyebrow?: string;
     title?: string;
     description?: string;
+    location?: string;
+    addressLabel?: string;
+    mapButtonLabel?: string;
+    ctaLabel?: string | null;
+    ctaHref?: string | null;
     iframeClassName?: string;
 }
 
@@ -13,10 +18,15 @@ const {
     eyebrow = "Trainingsort",
     title = "Hier findest du uns",
     description = "Unser Training findet in Künzell statt. Du kannst den Standort direkt in Google Maps öffnen oder die Karte hier auf der Seite nutzen.",
+    location = siteConfig.location,
+    addressLabel = "Adresse",
+    mapButtonLabel = "In Google Maps öffnen",
+    ctaLabel = "Probetraining anfragen",
+    ctaHref = siteConfig.signupUrl,
     iframeClassName = "h-full min-h-[20rem] md:min-h-[24rem]",
 } = Astro.props;
 
-const locationQuery = encodeURIComponent(siteConfig.location);
+const locationQuery = encodeURIComponent(location);
 const mapsEmbedUrl = `https://www.google.com/maps?q=${locationQuery}&output=embed`;
 const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${locationQuery}`;
 ---
@@ -46,20 +56,22 @@ const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${locationQuery
                 class="mt-6 rounded-[1.4rem] border border-[var(--color-line)] bg-white/60 p-5 shadow-[var(--shadow-soft)]"
             >
                 <p class="text-xs uppercase tracking-[0.14em] text-[var(--color-moss)]">
-                    Adresse
+                    {addressLabel}
                 </p>
                 <p class="mt-3 text-base font-semibold leading-7 text-[var(--color-ink)]">
-                    {siteConfig.location}
+                    {location}
                 </p>
             </div>
 
             <div class="mt-6 flex flex-wrap gap-3">
                 <Button href={mapsUrl} variant="secondary" external>
-                    In Google Maps öffnen
+                    {mapButtonLabel}
                 </Button>
-                <Button href={siteConfig.signupUrl}>
-                    Probetraining anfragen
-                </Button>
+                {
+                    ctaLabel && ctaHref && (
+                        <Button href={ctaHref}>{ctaLabel}</Button>
+                    )
+                }
             </div>
         </div>
 
