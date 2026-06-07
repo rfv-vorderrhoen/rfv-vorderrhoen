@@ -22,7 +22,7 @@ Also begann das Team, lösungsorientiert zu arbeiten und spontan andere Anzüge 
 - Angelinas Einzelanzug als "Horrorpuppe" 🔪
 - Sofia konnte ihren "Pennywise"-Anzug noch einmal anziehen 🎈
 
-Und Paula und Resi gestalteten noch "schnell mal eben" zwei weitere Anzüge💎
+Und Paula und Resi gestalteten noch "schnell mal eben" zwei weitere Anzüge.💎
 
 Wir sind euch super dankbar, dass ihr uns die Anzüge spontan zur Verfügung gestellt habt!❤️
 
