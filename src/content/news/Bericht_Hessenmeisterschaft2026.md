@@ -21,6 +21,6 @@ Die Voltis wissen aber, dass ihre Stärke in der Kür liegt und so wollten wie u
 Am Sonntag fand dann der zweite Kür-Start statt. Hier nahmen die Voltis sich als hauptsächliches Ziel, Spaß zu haben (und dass sich niemand verletzen soll)🥳. Tatsächlich schafften sie es, die Kür auf die Musik durchzuturnen und auch Pino war näher an seiner Trainingsleistung als am Vortag. So erreichten sie zusammen den 4. Platz in der Wertung des zweiten Kür-Durchlaufes.💪🏼
 
 Natürlich war das Wochenende etwas anstrengend, aber wir lieben es doch, gemeinsam Zeit zu verbringen. 👩‍❤️‍👩🐎
-Super glücklich waren wir über unseren Fan-Club, der uns fleißig anfeuerte und auch außerhalb des Prüfungszirkels unterstützte. Vielen Dank! 🫶🏼
+Super gefreut haben wir uns über unseren Fan-Club, der uns fleißig anfeuerte und auch außerhalb des Prüfungszirkels unterstützte. Vielen Dank! 🫶🏼
 Mit der Endnote von 6,0 ist Vorderrhön 1 zufrieden und stolz auf die Leistung aller. 💚💙❤️
-Aber natürlich wird schon fleißig weiter am Training und den individuellen Trainingsplänen gefeilt - Luft nach oben gibt's natürlich immer😋🤸🏽‍♀️
+Aber es wird schon fleißig weiter am Training und den individuellen Trainingsplänen gefeilt - Luft nach oben gibt's natürlich immer😋🤸🏽‍♀️
