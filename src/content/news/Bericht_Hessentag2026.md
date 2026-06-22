@@ -1,6 +1,6 @@
 ---
 title: Bericht zum Pferdefest des RuF Haunetal am Hessentag
-description: Am Samstag, den 20.06.26, veranstaltete der Reit- und Fahrverein Haunetal ein Pferdefest, an dem wir unsere Sport präsentieren durften
+description: Am Samstag, den 20.06.26, veranstaltete der Reit- und Fahrverein Haunetal ein Pferdefest, an dem wir unseren Sport präsentieren durften
 date: 2026-06-20
 isEvent: false
 featured: true
