@@ -24,3 +24,7 @@ Natürlich war das Wochenende etwas anstrengend, aber wir lieben es doch, gemein
 Super gefreut haben wir uns über unseren Fan-Club, der uns fleißig anfeuerte und auch außerhalb des Prüfungszirkels unterstützte. Vielen Dank! 🫶🏼
 Mit der Endnote von 6,0 ist Vorderrhön 1 zufrieden und stolz auf die Leistung aller. 💚💙❤️
 Aber es wird schon fleißig weiter am Training und den individuellen Trainingsplänen gefeilt - Luft nach oben gibt's natürlich immer😋🤸🏽‍♀️
+
+![[../../../assets/Hessenmeisterschaft2026_Verbeugung.jpg|Verbeugung beim Kürstart]]
+
+![[../../../assets/Hessenmeisterschaft2026_Kuer.jpg|Cosima, Calla und Sofia in der Kür]]
