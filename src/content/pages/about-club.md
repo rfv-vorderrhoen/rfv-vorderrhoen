@@ -55,4 +55,8 @@ Aufgaben: Erfolge des Vereins dokumentieren, Lehrgänge organisieren
 
 ## Vereinskleidung im Online-Shop
 
+Zeige, dass du Vereinsmitglied beim RFV Vorderrhön bist und ziehe passende Kleidung an. 
+Du kannst in unserem [Online-Shop](https://team.jako.com/de-de/team/rfv_vorderrhoen/) Shirts, Hosen und Accessoires mit dem Vereinslogo bedrucken lassen. 
+Mehr Fotos findest du auf unserem 
+
 
