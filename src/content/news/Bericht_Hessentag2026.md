@@ -16,6 +16,8 @@ Die Mädchen von Vorderrhön 5 eröffneten die Vorführungen mit ihrer Kür auf 
 
 Nach den Voltigier-Vorführungen durften Kinder und Jugendliche aus dem Publikum das Voltigieren ausprobieren. Hierfür konnten sie sich auf die Turnpferde setzen oder sogar ein paar Übungen auf Prince und Limani ausprobieren. 
 
+Ein Video findest du auf unserem [Instagram](https://www.instagram.com/reel/DaL54pHuNaq/?igsh=MXVpb21sbDI0MHoxMQ==).
+
 Einen ausführlicheren Bericht zum Pferdetag und viele tolle Fotos findest du bei [Osthessen News](https://hessentag.osthessen-news.de/artikel/11795287/fest-im-sattel-tolles-pferdefest-vom-reit-fahrverein-haunetal).
 
 ![[../../../assets/Hessentag2026_Probevolti1.jpeg|Schnuppervolti auf Limani]]
