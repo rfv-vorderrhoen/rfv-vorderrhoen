@@ -52,3 +52,7 @@ Aufgaben: Gruppeneinteilungen, Anmeldungen und Kündigungen verwalten, Bestandse
 
 **Die Sportwartin** - Anna  
 Aufgaben: Erfolge des Vereins dokumentieren, Lehrgänge organisieren
+
+## Vereinskleidung im Online-Shop
+
+
