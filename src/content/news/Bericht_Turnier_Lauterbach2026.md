@@ -22,6 +22,6 @@ Wir sind zufrieden mit dem erfolgreichen Wochenende und freuen uns auf den näch
 
 Mehr Fotos findest du auf [Instagram](https://www.instagram.com/p/DcedzFrDldt/?igsi=MWM0NTMxMnZ2ejN1OA==).
 
-Mehr Fotos und ausführlichere Berichte findest du bei [OZ]([https://www.osthessen-zeitung.de/einzelansicht/news/2026/april/aktionstag-voltigieren-in-kuenzell-begeistert-gross-und-klein-fotos-1.html](https://www.osthessen-zeitung.de/einzelansicht/news/2026/august/rfv-vorderrhoen-raeumt-in-lauterbach-ab-politische-anerkennung-1)) und bei [Osthessen News] (https://osthessen-news.de/n11798656/vorderrhoen-raumt-in-lauterbach-ab-und-erhalt-politische-anerkennung.html).
+Mehr Fotos und ausführlichere Berichte findest du bei [Osthessen News] (https://osthessen-news.de/n11798656/vorderrhoen-raumt-in-lauterbach-ab-und-erhalt-politische-anerkennung.html).
 
 ![[../../../assets/Lauterbach2026_Einzel.jpg|Verbeugung von Hannah und Klara mit Greta, Heidi und Bolty]]
