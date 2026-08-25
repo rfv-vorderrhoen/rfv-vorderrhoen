@@ -7,4 +7,4 @@ seoTitle: Weihnachtsmarkt Künzell | RFV Vorderrhön
 seoDescription: Weihnachtsmarkt Künzell | RFV Vorderrhön
 ---
 
-Am Wochenende vom 4. bis 6. Dezember 2026 findet der 11. Künzeller Weihnachtsmarkt am Platz "Neue Mitte" statt. Dort wird der RFV Vorderrhön Suppen, Waffeln, Kaffee und Kako verkaufen. 
+Am Wochenende vom 4. bis 6. Dezember 2026 findet der 11. Künzeller Weihnachtsmarkt am Platz "Neue Mitte" statt. Dort wird der RFV Vorderrhön Suppen, Waffeln, Kaffee und Kakao verkaufen. 
