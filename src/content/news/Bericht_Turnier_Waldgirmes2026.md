@@ -14,6 +14,7 @@ Am Sonntag, den 13. September,  fuhr unser Schritt-Team Vorderrhön 4 zum RuF La
 Die Voltis von Vorderrhön 4 voltigierten auf Hulapalu, der von Eva longiert wurde. Caroline war als Helferin dabei. Das Team erreichte den zweiten Platz.🥈
 
 Anschließend präsentierten noch fünf Mädchen ihr Können als Einzelvoltis. Hannah und Julia starteten auf Palu, Pia und Sophie auf Rocky und Klara auf Bolty. Bei der Auswahl der Kürthemen wurden die Voltis kreativ: 
+- Hannah: Rio 🦜
 - Julia: Avatar 🩵
 - Pia: Sky 🌠
 - Sophie: Feuer🔥
