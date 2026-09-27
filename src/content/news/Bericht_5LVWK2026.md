@@ -18,7 +18,7 @@ Damit man für seinen Landesverband starten kann, muss man sich durch gute Leist
 Das Trio hatte aufgrund von Sturmius' Ausbildung die Saison auf sich zukommen lassen. Ursprünglich war kein Start auf einem überregionalen Turnier angedacht. Doch dann war die Freude groß: Strumius wurde als M-Einzelvoltigierer auf Bolty mit Heidi an der Longe nominiert und durfte für Hessen an den Start gehen. 🎉
 
 Auf den letzten beiden Turnieren war Bolty mit unseren Vereinspferden unterwegs gewesen. Zu Beginn des Turniertages bemerkte Heidi, dass Bolty sich an das gemeinsame Reisen mit anderen Pferden gewöhnt hatte. 🐴❣️ Nachdem Heidi ihn warmgeritten hatte, lief er im Prüfungszirkel gut. Sturmius turnte eine solide Pflicht, konnte bei zwei Übungen jedoch leider nicht seine Trainingsleistung abrufen. 
-Anschließend präsentierte er seine Kür zum Thema „König der Löwen“.🦁 Die drei kamen gut in ihren routinierten Ablauf. Leider rutschte Sturmius einmal von Bolty herunter, sodass es Abzüge gab und die Choreografie spontan etwas abgeändert wurde. 
+Anschließend präsentierte er seine Kür. Die drei kamen gut in ihren routinierten Ablauf. Leider rutschte Sturmius einmal von Bolty herunter, sodass es Abzüge gab und die Choreografie spontan etwas abgeändert wurde. 
 
 Das Trio schaffte es bei der Platzierung auf den fünften Platz, in die Mitte der neun M-Einzelvoltis.🏅
 
