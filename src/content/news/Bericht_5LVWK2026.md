@@ -24,5 +24,4 @@ Das Trio schaffte es bei der Platzierung auf den fünften Platz, in die Mitte de
 
 Ein kleiner Fanclub, bestehend aus Familie Hahner und Vorderrhöner Voltis, war übrigens auch mit von der Partie. 🫶🏼
 
-
 ![[../../../assets/5LVWK2026_Heidi+Bolty.jpg|Heidi und Bolty]]
