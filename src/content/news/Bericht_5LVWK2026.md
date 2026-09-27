@@ -6,7 +6,7 @@ isEvent: false
 featured: true
 seoTitle: 5-Ländervergleichswettkampf in Dornheim | Bericht
 seoDescription: Am 26. und 27. September fand der 5-LVWK in Dornheim statt.
-image: "../../../assets/Lauterbach2026_V2.jpg"
+image: "../../../assets/5LVWK2026_Fans.jpg"
 ---
 
 Dieses Wochenende fand in Dornheim der 5-Ländervergleichswettkampf statt.✨
@@ -25,4 +25,4 @@ Das Trio schaffte es bei der Platzierung auf den 5. Platz, in die Mitte der neun
 Ein kleiner Fanclub, bestehend aus Familie Hahner und Vorderrhöner Voltis, war übrigens auch mit von der Partie. 🫶🏼
 
 
-![[../../../assets/Lauterbach2026_Einzel.jpg|Verbeugung von Hannah und Klara mit Greta, Heidi und Bolty]]
+![[../../../assets/5LVWK2026_Heidi+Bolty.jpg|Heidi und Bolty]]
