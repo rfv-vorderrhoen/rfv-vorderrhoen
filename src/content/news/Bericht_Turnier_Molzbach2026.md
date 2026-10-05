@@ -22,37 +22,37 @@ Am Nachmittag des Samstages fanden die letzten Wertungen des Volti-Cups statt. D
 Vorderrhön präsentierte zwei Showküren. Die gemischte Gruppe mit Voltis aus Vorderrhön 2 und 3 erreichten den zweiten Platz 🥈 mit dem Thema ABBA 🪩. Vorderrhön 4 hat eine Kür zum Thema Elemente 🔥💧🌱🌬️ gestaltet und erhielt weiße Schleifen für den dritten Platz. 🥉
 
 In der ersten Abteilung der Einzel-Showküren war die Platzierung für Vorderrhön wie folgt: 
-- 1. Platz: Julia W. mit dem Thema Avatar 💙
-- 2. Platz: Sophie mit dem Thema Feuer 🔥
-- 4. Platz: Mila mit dem Thema Unter dem Meer 🌊
-- 5. Platz: Hannah mit dem Thema Rio 🦜
-- 6. Platz: Victoria mit dem Thema Flower 🌸
-- 7. Platz: Chiara als Vaiana 🏝️
+- 1.Platz: Julia W. mit dem Thema Avatar 💙
+- 2.Platz: Sophie mit dem Thema Feuer 🔥
+- 4.Platz: Mila mit dem Thema Unter dem Meer 🌊
+- 5.Platz: Hannah mit dem Thema Rio 🦜
+- 6.Platz: Victoria mit dem Thema Flower 🌸
+- 7.Platz: Chiara als Vaiana 🏝️
 
 Julia J. startete in der zweiten Abteilung der Einzel-Showküren und erreichte den sechsten Platz. 
 
 Nach den Einzelprüfungen folgte die Prüfungen der Doppel-Showküren. Hier wurden die Voltis von Vorderrhön in der ersten Abteilung wie folgt platziert: 
--	1. Platz: Klara und Hannah mit dem Thema Weltall 👩🏼‍🚀
--	2. Platz: Victoria und Lina als Detektive 🕵🏼
--	5. Platz: Paulina und Julia mit dem Thema Harry Potter ⚡
--	6. Platz: Emmylou und Chiara als Bibi und Tina🐴
--	8. Platz: Sophie und Mila mit dem Thema Powerfrauen in Rot 💪🏼
+-	1.Platz: Klara und Hannah mit dem Thema Weltall 👩🏼‍🚀
+-	2.Platz: Victoria und Lina als Detektive 🕵🏼
+-	5.Platz: Paulina und Julia mit dem Thema Harry Potter ⚡
+-	6.Platz: Emmylou und Chiara als Bibi und Tina🐴
+-	8.Platz: Sophie und Mila mit dem Thema Powerfrauen in Rot 💪🏼
 
 Auch in der vierten Abteilung gingen unsere Voltis an den Start und erreichten mit ihren Leistungen folgende Platzierungen: 
--	2. Platz: Emma und Valentina als Wikinger 🗡️
--	3. Platz: Caroline und Hannah als Snowwhite and the Huntsman 🏹
--	6. Platz: Lana und Leni mit dem Thema Peter Pan 🧚🏼
--	8. Platz: Emilia und Calla als Bibi und Tina 🐴
+-	2.Platz: Emma und Valentina als Wikinger 🗡️
+- 3.Platz: Caroline und Hannah als Snowwhite and the Huntsman 🏹
+-	6.Platz: Lana und Leni mit dem Thema Peter Pan 🧚🏼
+-	8.Platz: Emilia und Calla als Bibi und Tina 🐴
 
 Nach einem langen und erfolgreichen Tag verabschiedeten sich die Voltis voneinander, nur um sich am Tag darauf wieder zu sehen. Denn auch am Sonntag starteten eine Gruppe und sieben Einzel-Voltis in Molzbach. 
 
 Im Schritt-Schritt-Einzel gingen sechs unserer Voltis auf Hulapalu an den Start. Hannah longierte ihn und Emma half den Mädels auf das Pferd. Die Einzels erreichten folgende Platzierungen: 
--	1. Platz: Hannah mit dem Thema Rio 🦜
--	2. Platz: Mia 🖤
--	3. Platz: Klara mit dem Thema die drei ❗❗❗
--	4. Platz: Lina mit dem Thema Magic ✨
--	5. Platz: Victoria mit dem Thema Flower 🌸
--	6. Platz: Paulina 🩵
+-	1.Platz: Hannah mit dem Thema Rio 🦜
+-	2.Platz: Mia 🖤
+-	3.Platz: Klara mit dem Thema die drei ❗❗❗
+-	4.Platz: Lina mit dem Thema Magic ✨
+-	5.Platz: Victoria mit dem Thema Flower 🌸
+-	6.Platz: Paulina 🩵
 
 Anschließend startete Lana als Galopp-Schritt-Einzel auf Rocky mit Vanessa an der Longe und Annika als Helferin. Sie wurde erste. 🥇
 
@@ -61,7 +61,6 @@ Nachmittags folgte dann der letzte Start unserer Turniersaison: unsere Schrittgr
 Bei dieser Siegerehrung fand außerdem die Ehrung der Kreismeisterschaft des KRB Rhön-Vogelsberg und die Verbandsmeisterschaft von Kurhessen-Waldeck statt. Im Schritt-Schritt-Einzel landeten bei beiden Ehrungen Hannah auf dem ersten, Mia auf dem zweiten und Klara auf dem dritten Platz. 
 
 Wir sind sehr zufrieden mit dem letzten Turnier dieser Saison und stolz auf die Voltigiererinnen, Trainerinnen, Longenführerinnen und Pferde. 
-
 
 
 Weitere Fotos findest du auf [Instagram](https://www.instagram.com/p/DeG42xaDmfH/?stkn=MThjdnRxdmZsazMwZQ==).
