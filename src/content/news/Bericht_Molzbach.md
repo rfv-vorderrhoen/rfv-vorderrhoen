@@ -19,7 +19,7 @@ In der folgenden Abteilung startete Heidi mit einer L-Pflicht auf Bolty. Eva lon
 Kurz nach dem Pflichtstart lief Heidi erneut für eine Wertung der Verbandstrophy in den Prüfungszirkel ein. Dieses Mal mit ihrem Team Vorderrhön 2 auf Rocky mit Vanessa an der Longe. Es war der erste „richtige“ Pflichtstart für Rocky. Die Voltis turnten eine gekürzte A-Pflicht. Rocky war zu Beginn noch etwas aufgeregt, lief sich dann jedoch ein. Der Kürstart erfolgte auf dem Movie. Vorderrhön 2 erreichte den ersten Platz, sodass ihr erster Start auf Rocky ein voller Erfolg war. 🥇
 
 Am Nachmittag des Samstages fanden die letzten Wertungen des Volti-Cups statt. Der Volti-Cup wurde vom Kreisreiterbund Rhön-Vogelsberg ausgerichtet. Die erste Wertung fand bei unserem Heimturnier statt, die zweite in Lauterbach. Nach den Prüfungen in Molzbach wurden die Ergebnisse zusammengerechnet. Anschließend erfolgten zwei Siegerehrungen: erst die für die Ergebnisse der Starts des Tages, anschließend wurden jeweils die drei besten Starterinnen bzw. Gruppen des Cups geehrt. 
-Vorderrhön präsentierte zwei Showküren. Die gemischte Gruppe mit Voltis aus Vorderrhön 2 und 3 erreichten den zweiten Platz 🥈 mit dem Thema ABBA 🪩. Vorderrhön 4 erhielt weiße Schleifen für den dritten Platz. 🥉
+Vorderrhön präsentierte zwei Showküren. Die gemischte Gruppe mit Voltis aus Vorderrhön 2 und 3 erreichten den zweiten Platz 🥈 mit dem Thema ABBA 🪩. Vorderrhön 4 hat eine Kür zum Thema Elemente 🔥💧🌱🌬️ gestaltet und erhielt weiße Schleifen für den dritten Platz. 🥉
 
 In der ersten Abteilung der Einzel-Showküren war die Platzierung für Vorderrhön wie folgt: 
 - 1. Platz: Julia W. mit dem Thema Avatar 💙
