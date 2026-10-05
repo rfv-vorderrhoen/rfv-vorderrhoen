@@ -29,7 +29,7 @@ In der ersten Abteilung der Einzel-Showküren war die Platzierung für Vorderrh�
 - 6.Platz: Victoria mit dem Thema Flower 🌸
 - 7.Platz: Chiara als Vaiana 🏝️
 
-Julia J. startete in der zweiten Abteilung der Einzel-Showküren und erreichte den sechsten Platz. 
+Julia J. startete als gute Fee 🧚🏼‍♀️ in der zweiten Abteilung der Einzel-Showküren und erreichte den sechsten Platz. 
 
 Nach den Einzelprüfungen folgte die Prüfungen der Doppel-Showküren. Hier wurden die Voltis von Vorderrhön in der ersten Abteilung wie folgt platziert: 
 -	1.Platz: Klara und Hannah mit dem Thema Weltall 👩🏼‍🚀
