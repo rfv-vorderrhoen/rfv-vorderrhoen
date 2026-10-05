@@ -8,7 +8,7 @@ seoTitle: Turnier in Molzbach | Bericht
 seoDescription: Am 03. und 04. Oktober fand in Molzbach ein Turnier statt.
 image: "../../../assets/Molzbach_V5.jpg"
 ---
-Am Wochenende des 3. und 4. Oktobers fand in Molzbach ein Turnier statt. 
+Am Wochenende des 3. und 4. Oktobers fand in Molzbach das letzte Turnier dieser Saison statt. 
 
 Dort startete ca. die Hälfte unseres Vereins auf dem Movie und auf vier Pferden. Dementsprechend war es ein ereignisreiches Wochenende mit vielen Erfolgen. 
 
