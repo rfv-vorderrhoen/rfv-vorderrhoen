@@ -44,6 +44,10 @@ Auch in der vierten Abteilung gingen unsere Voltis an den Start und erreichten m
 -	6.Platz: Lana und Leni mit dem Thema Peter Pan 🧚🏼
 -	8.Platz: Emilia und Calla als Bibi und Tina 🐴
 
+Bei der darauffolgenden Ehrung der Siegerinnen des Volti-Cups erreichte Chiara im Schritt-Einzel den zweiten Platz 🥈 und Sophie den Dritten 🥉. 
+Bei der Ehrung der Doppelvoltigiererinnen des Volti-Cups erreichten in der Leistungsklasse Schritt Hannah und Klara den ersten Platz 🥇, Mila und Sophie den Zweiten 🥈 und Victoria und Lina den dritten Platz 🥉. Valentina und Emma erhielten goldene Schleifen für den ersten Platz der A-/L-Doppelvoltis. 🥇
+Bei der Teamwertung hatten die Voltis von Vorderrhön mit ihrer Leistung überzeugt, sodass sie den ersten Platz erreichten. 🥇 
+
 Nach einem langen und erfolgreichen Tag verabschiedeten sich die Voltis voneinander, nur um sich am Tag darauf wieder zu sehen. Denn auch am Sonntag starteten eine Gruppe und sieben Einzel-Voltis in Molzbach. 
 
 Im Schritt-Schritt-Einzel gingen sechs unserer Voltis auf Hulapalu an den Start. Hannah longierte ihn und Emma half den Mädels auf das Pferd. Die Einzels erreichten folgende Platzierungen: 
