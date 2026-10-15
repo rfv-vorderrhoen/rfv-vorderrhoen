@@ -8,7 +8,7 @@ seoTitle: Voltigier-Ferienaktion | Bericht
 seoDescription: Vom 12. bis 14.10.26 fand unsere Voltigier-Ferienaktion statt.
 ---
 
-Drei Tage lang fand bei uns eine Voltigier-Ferienaktion statt. 🍁
+Drei Tage lang fand bei uns am Hof eine Voltigier-Ferienaktion statt. 🍁
 
 Vom 12. bis 14. Oktober trainierten Valentina und Emma jeweils drei Stunden lang mit den Mädchen. 💕
 Sie putzten Prince 🐴, erkundeten den Hof 🔍, turnten, spielten und übten das Voltigieren auf dem Movie. 🤸🏼‍♀️ 
