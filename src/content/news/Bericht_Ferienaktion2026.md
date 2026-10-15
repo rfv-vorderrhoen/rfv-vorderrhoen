@@ -1,6 +1,6 @@
 ---
 title: Bericht zur Voltigier-Ferienaktion im Herbst 
-description: Drei Tage lang fand bei uns am Hof eine Voltigier-Ferienaktion statt
+description: In den Herbstferien konnten Kinder bei uns das Voltigieren (genauer) kennenlernen.
 date: 2026-10-12
 isEvent: false
 featured: true
