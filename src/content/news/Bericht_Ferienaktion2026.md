@@ -14,7 +14,7 @@ Vom 12. bis 14. Oktober trainierten Valentina und Emma jeweils drei Stunden lang
 Sie putzten Prince 🐴, erkundeten den Hof 🔍, turnten, spielten und übten das Voltigieren auf dem Movie. 🤸🏼‍♀️ 
 Dann durften sie auch auf Prince voltigieren, der von Caroline longiert wurde.🐎 
 
-Zum Abschluss erhielten die Mädchen eine Urkunde und eine Schleife zur Erinnerung. 🏅 
+Zum Abschluss führten die Mädchen ihren Eltern vor, was sie in den letzten drei Tagen alles gelernt haben. Dann erhielten sie eine Urkunde und eine Schleife zur Erinnerung. 🏅 
 Schön, dass ihr eure Ferien mit uns verbracht habt! ✨
 
 ![[../../../assets/Ferienaktion_Herbst2026.jpg|die Teilnehmerinnen der Ferienaktion mit Prince und ihren Trainerinnen Emma, Valentina und Caro]]
